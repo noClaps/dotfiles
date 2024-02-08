@@ -1,8 +1,3 @@
-# Python
-[[language]]
-name = "python"
-language-servers = [ "pyright" ]
-
 # Astro
 [language-server.astro-ls]
 command = "astro-ls"
@@ -20,7 +15,3 @@ name = "swift"
 formatter = { command = "swift-format", args = ["format"] }
 auto-format = true
 roots = []
-
-# JSON
-[language-server.vscode-json-language-server]
-config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
