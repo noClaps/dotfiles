@@ -1,0 +1,16 @@
+theme = "ayu_evolve"
+
+[editor]
+line-number = "relative"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Update Homebrew packages
+brew update && brew upgrade
+
+# Push Helix changes
+cd $HOME/.config/helix
+git commit -am "[SCRIPT] Update config"
+git push
+
+# Update Bun global packages
+bun update -g

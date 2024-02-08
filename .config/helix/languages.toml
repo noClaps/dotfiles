@@ -1,0 +1,26 @@
+# Python
+[[language]]
+name = "python"
+language-servers = [ "pyright" ]
+
+# Astro
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = {typescript = {tsdk = "/Users/user/.bun/install/global/node_modules/typescript/lib"}, environment = "node"}
+
+[[language]]
+name = "astro"
+auto-format = true
+language-servers = [ "astro-ls" ]
+
+# Swift
+[[language]]
+name = "swift"
+formatter = { command = "swift-format", args = ["format"] }
+auto-format = true
+roots = []
+
+# JSON
+[language-server.vscode-json-language-server]
+config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
