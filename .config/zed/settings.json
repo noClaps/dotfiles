@@ -11,9 +11,7 @@
   "features": {
     "copilot": false
   },
-  "vim_mode": true,
   "show_copilot_suggestions": false,
-  "relative_line_numbers": true,
   "collaboration_panel": {
     "button": false
   },
