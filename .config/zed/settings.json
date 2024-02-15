@@ -30,5 +30,6 @@
   "tabs": {
     "git_status": true
   },
-  "soft_wrap": "editor_width"
+  "soft_wrap": "editor_width",
+  "autosave": { "after_delay": { "milliseconds": 500 } }
 }
