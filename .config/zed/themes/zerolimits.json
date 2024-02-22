@@ -1,0 +1,77 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "name": "ZeroLimits",
+  "author": "noClaps",
+  "themes": [
+    {
+      "name": "ZeroLimits",
+      "appearance": "dark",
+      "style": {
+        // Background
+        "background": "#111",
+        // Border
+        "border": "#222",
+        "border.variant": "#222",
+        // Editor
+        "editor.active_line.background": "#222",
+        "editor.active_line_number": "#aaa",
+        "editor.background": "#111",
+        "editor.document_highlight.read_background": "#444",
+        "editor.foreground": "#eee",
+        "editor.gutter.background": "#111",
+        "editor.invisible": "#888",
+        "editor.line_number": "#444",
+        // Element
+        "element.hover": "#222",
+        // Elevated surface
+        "elevated_surface.background": "#111",
+        // Ghost element
+        "ghost_element.active": "#444",
+        "ghost_element.hover": "#222",
+        "ghost_element.selected": "#222",
+        // Panel
+        "panel.background": "#111",
+        // Players
+        "players": [
+          {
+            "cursor": "#aaa",
+            "background": "#000",
+            "selection": "#444"
+          }
+        ],
+        // Scrollbar
+        "scrollbar_thumb.background": "#222",
+        "scrollbar.thumb.border": "#222",
+        "scrollbar.thumb.hover_background": "#444",
+        "scrollbar.track.background": "#111",
+        "scrollbar.track.border": "#222",
+        // Search
+        "search.match_background": "#444",
+        // Status bar,
+        "status_bar.background": "#111",
+        // Surface
+        "surface.background": "#111",
+        // Tab
+        "tab.active_background": "#222",
+        "tab.inactive_background": "#111",
+        // Tab bar
+        "tab_bar.background": "#111",
+        // Terminal
+        "terminal.ansi.bright_black": "#444",
+        "terminal.background": "#111",
+        // Text
+        "text": "#eee",
+        "text.accent": "#28f",
+        "text.muted": "#aaa",
+        // Title bar
+        "title_bar.background": "#111",
+        // Toolbar
+        "toolbar.background": "#111",
+        // Warning
+        "warning": "#ff0",
+        "warning.background": "#880",
+        "warning.border": "#880"
+      }
+    }
+  ]
+}
