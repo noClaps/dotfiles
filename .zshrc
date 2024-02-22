@@ -1,5 +1,6 @@
 # PATH
 export PATH="$HOME/.local/bin:$HOME/.bun/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # env
 export XDG_CONFIG_HOME="$HOME/.config"
