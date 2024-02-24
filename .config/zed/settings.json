@@ -36,5 +36,6 @@
     "after_delay": {
       "milliseconds": 2000
     }
-  }
+  },
+  "hard_tabs": true
 }
