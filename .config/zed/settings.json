@@ -12,17 +12,6 @@
     "copilot": false
   },
   "show_copilot_suggestions": false,
-  "collaboration_panel": {
-    "button": false
-  },
-  "chat_panel": {
-    "button": false,
-    "default_width": 0
-  },
-  "notification_panel": {
-    "button": false,
-    "default_width": 0
-  },
   "assistant": {
     "button": false,
     "default_width": 0,
