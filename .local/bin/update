@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# Update Homebrew packages
-brew update && brew upgrade
-
-# Update Bun global packages
-bun update -g
