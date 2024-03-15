@@ -27,5 +27,8 @@
   "hard_tabs": true,
   "inlay_hints": {
     "enabled": true
+  },
+  "calls": {
+    "mute_on_join": true
   }
 }
