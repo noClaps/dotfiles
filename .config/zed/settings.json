@@ -13,7 +13,8 @@
   },
   "show_copilot_suggestions": false,
   "assistant": {
-    "button": false
+    "button": false,
+    "version": "1"
   },
   "tabs": {
     "git_status": true
@@ -28,7 +29,10 @@
   "inlay_hints": {
     "enabled": true
   },
-  "calls": {
-    "mute_on_join": true
+  "collaboration_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
   }
 }
