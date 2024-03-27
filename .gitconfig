@@ -14,4 +14,4 @@
 	process = git-lfs filter-process
 	required = true
 [core]
-	excludesfile = /Users/user/.gitignore
+	excludesfile = /Users/user/.config/git/ignore
