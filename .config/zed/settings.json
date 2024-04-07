@@ -25,7 +25,6 @@
       "milliseconds": 2000
     }
   },
-  "hard_tabs": true,
   "inlay_hints": {
     "enabled": true
   },
