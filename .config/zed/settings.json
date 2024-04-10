@@ -25,9 +25,6 @@
       "milliseconds": 2000
     }
   },
-  "inlay_hints": {
-    "enabled": true
-  },
   "collaboration_panel": {
     "button": false
   },
