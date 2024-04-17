@@ -30,5 +30,13 @@
   },
   "chat_panel": {
     "button": false
+  },
+  "languages": {
+    "C": {
+      "format_on_save": "language_server"
+    },
+    "C++": {
+      "format_on_save": "language_server"
+    }
   }
 }
