@@ -13,6 +13,7 @@
   },
   "show_copilot_suggestions": false,
   "assistant": {
+    "enabled": false,
     "button": false,
     "version": "1"
   },
