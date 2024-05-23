@@ -1,6 +1,7 @@
 {
   "features": {
-    "copilot": false
+    "copilot": false,
+    "inline_completion_provider": "none"
   },
   "show_copilot_suggestions": false,
   "assistant": {
@@ -22,6 +23,9 @@
       "format_on_save": "language_server"
     },
     "C++": {
+      "format_on_save": "language_server"
+    },
+    "Markdown": {
       "format_on_save": "language_server"
     }
   }
