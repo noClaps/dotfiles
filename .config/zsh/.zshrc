@@ -8,6 +8,9 @@ alias rm="rm -rf"
 # plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# rust completions
+fpath+=~/.zfunc
+
 # completions
 if type brew &>/dev/null
 then
