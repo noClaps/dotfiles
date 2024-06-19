@@ -3,7 +3,7 @@
     "copilot": false,
     "inline_completion_provider": "none"
   },
-  "show_copilot_suggestions": false,
+  "show_inline_completions": false,
   "assistant": {
     "enabled": false,
     "button": false,
