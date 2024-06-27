@@ -28,5 +28,14 @@
     "Markdown": {
       "format_on_save": "language_server"
     }
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "notification_panel": {
+    "button": false
   }
 }
