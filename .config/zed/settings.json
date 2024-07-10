@@ -1,34 +1,15 @@
 {
   "features": {
-    "copilot": false,
     "inline_completion_provider": "none"
   },
-  "show_inline_completions": false,
   "assistant": {
     "enabled": false,
-    "button": false,
     "version": "1"
   },
   "tabs": {
     "git_status": true
   },
-  "soft_wrap": "editor_width",
-  "autosave": {
-    "after_delay": {
-      "milliseconds": 2000
-    }
-  },
-  "languages": {
-    "C": {
-      "format_on_save": "language_server"
-    },
-    "C++": {
-      "format_on_save": "language_server"
-    },
-    "Markdown": {
-      "format_on_save": "language_server"
-    }
-  },
+  "autosave": "on_focus_change",
   "chat_panel": {
     "button": false
   },
@@ -36,6 +17,9 @@
     "button": false
   },
   "notification_panel": {
+    "button": false
+  },
+  "outline_panel": {
     "button": false
   }
 }
