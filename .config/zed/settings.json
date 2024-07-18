@@ -22,5 +22,7 @@
   "outline_panel": {
     "button": false
   },
-  "theme": "ZeroLimits"
+  "theme": "ZeroLimits",
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_family": "Menlo"
 }
