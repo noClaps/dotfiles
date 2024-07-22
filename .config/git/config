@@ -1,6 +1,6 @@
 [user]
 	name = noClaps
-	email = github@zerolimits.dev
+	email = sorter_hybrid_07@icloud.com
 	signingKey = ~/.ssh/id_ed25519.pub
 [commit]
 	gpgsign = true
