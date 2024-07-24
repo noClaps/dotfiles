@@ -7,7 +7,8 @@
     "version": "1"
   },
   "tabs": {
-    "git_status": true
+    "git_status": true,
+    "file_icons": true
   },
   "autosave": "on_focus_change",
   "chat_panel": {
