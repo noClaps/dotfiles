@@ -4,6 +4,9 @@ export PATH="$HOME/.local/bin:$HOME/.bun/bin:$PATH"
 # CLI tools
 alias ls="ls -Ap1 --color"
 alias rm="rm -rf"
+serve() {
+    bunx serve $1
+}
 
 # plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
