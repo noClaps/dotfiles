@@ -2,3 +2,4 @@
 .zed/
 .vscode/
 .idea/
+node_modules/
