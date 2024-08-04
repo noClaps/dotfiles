@@ -4,7 +4,7 @@
   },
   "assistant": {
     "enabled": false,
-    "version": "1"
+    "version": "2"
   },
   "tabs": {
     "git_status": true,
