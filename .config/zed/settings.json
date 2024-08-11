@@ -25,5 +25,6 @@
   },
   "theme": "ZeroLimits",
   "ui_font_family": ".SystemUIFont",
-  "buffer_font_family": "Menlo"
+  "buffer_font_family": "Menlo",
+  "show_signature_help_after_edits": false
 }
