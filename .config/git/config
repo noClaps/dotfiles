@@ -1,6 +1,6 @@
 [user]
 	name = noClaps
-	email = sorter_hybrid_07@icloud.com
+	email = 04plugs-bios@icloud.com
 	signingKey = ~/.ssh/id_ed25519.pub
 [commit]
 	gpgsign = true
