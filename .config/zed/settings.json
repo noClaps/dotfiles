@@ -1,7 +1,10 @@
 {
-  "features": { "inline_completion_provider": "none" },
+  "features": { "inline_completion_provider": "supermaven" },
   "assistant": {
-    "enabled": false,
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
     "version": "2"
   },
   "tabs": {
