@@ -16,3 +16,6 @@ then
   autoload -Uz compinit
   compinit
 fi
+
+# bun completions
+[ -s "/Users/user/.bun/_bun" ] && source "/Users/user/.bun/_bun"
