@@ -19,3 +19,7 @@ fi
 
 # bun completions
 [ -s "/Users/user/.bun/_bun" ] && source "/Users/user/.bun/_bun"
+
+# uv
+. "$HOME/.cargo/env"
+eval "$(uv generate-shell-completion zsh)"
