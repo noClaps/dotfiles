@@ -1,5 +1,5 @@
 {
-  "features": { "inline_completion_provider": "supermaven" },
+  "features": { "inline_completion_provider": "none" },
   "assistant": {
     "enabled": false,
     "version": "2"
