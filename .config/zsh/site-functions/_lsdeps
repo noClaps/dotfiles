@@ -1,0 +1,27 @@
+#compdef lsdeps
+local context state state_descr line
+_lsdeps_commandname=$words[1]
+typeset -A opt_args
+
+_lsdeps() {
+    integer ret=1
+    local -a args
+    args+=(
+        ':package:'
+        '(-p --skip-peer)'{-p,--skip-peer}'[Skip counting peer dependencies]'
+        '(-o --skip-optional)'{-o,--skip-optional}'[Skip counting optional dependencies]'
+        '--silent[Hide the "Fetching dependencies for..." messages]'
+        '(-h --help)'{-h,--help}'[Show help information.]'
+    )
+    _arguments -w -s -S $args[@] && ret=0
+
+    return ret
+}
+
+
+_custom_completion() {
+    local completions=("${(@f)$($*)}")
+    _describe '' completions
+}
+
+_lsdeps

@@ -1,0 +1,27 @@
+#compdef random
+local context state state_descr line
+_random_commandname=$words[1]
+typeset -A opt_args
+
+_random() {
+    integer ret=1
+    local -a args
+    args+=(
+        '-i[Should the output be an integer?]'
+        '(--coin -c)'{--coin,-c}'[Flip a coin instead of generating a number.]'
+        ':min:'
+        ':max:'
+        '(-h --help)'{-h,--help}'[Show help information.]'
+    )
+    _arguments -w -s -S $args[@] && ret=0
+
+    return ret
+}
+
+
+_custom_completion() {
+    local completions=("${(@f)$($*)}")
+    _describe '' completions
+}
+
+_random
