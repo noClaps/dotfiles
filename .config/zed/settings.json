@@ -16,19 +16,5 @@
   "theme": "ZeroLimits",
   "ui_font_family": ".SystemUIFont",
   "buffer_font_family": "Menlo",
-  "show_signature_help_after_edits": false,
-  "languages": {
-    "Python": {
-      "language_servers": ["ruff"],
-      "formatter": [
-        {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
-        },
-        { "language_server": { "name": "ruff" } }
-      ]
-    }
-  }
+  "show_signature_help_after_edits": false
 }
