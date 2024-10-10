@@ -1,9 +1,5 @@
 {
 	"features": { "inline_completion_provider": "none" },
-	"assistant": {
-		"enabled": false,
-		"version": "2"
-	},
 	"tabs": {
 		"git_status": true,
 		"file_icons": true
