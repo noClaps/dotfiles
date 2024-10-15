@@ -1,8 +1,7 @@
 {
 	"features": { "inline_completion_provider": "none" },
 	"tabs": {
-		"git_status": true,
-		"file_icons": true
+		"git_status": true
 	},
 	"autosave": "on_focus_change",
 	"chat_panel": { "button": false },
@@ -10,6 +9,5 @@
 	"notification_panel": { "button": false },
 	"outline_panel": { "button": false },
 	"theme": "Ayu Dark",
-	"show_signature_help_after_edits": false,
 	"hard_tabs": true
 }
