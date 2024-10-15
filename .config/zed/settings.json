@@ -10,8 +10,6 @@
 	"notification_panel": { "button": false },
 	"outline_panel": { "button": false },
 	"theme": "Ayu Dark",
-	"ui_font_family": ".SystemUIFont",
-	"buffer_font_family": "Menlo",
 	"show_signature_help_after_edits": false,
 	"hard_tabs": true
 }
