@@ -4,6 +4,7 @@ export PATH="$HOME/.local/bin:$HOME/.bun/bin:$PATH"
 # CLI tools
 alias ls="ls -Ap1 --color"
 alias rm="rm -rf"
+alias diff="diff --color=always"
 
 # plugins
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
