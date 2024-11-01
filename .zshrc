@@ -1,3 +1,7 @@
+export ZDOTDIR="$HOME/.config/zsh"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # PATH
 export PATH="$HOME/.local/bin:$HOME/.bun/bin:$PATH"
 
