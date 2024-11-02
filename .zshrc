@@ -1,5 +1,3 @@
-export ZDOTDIR="$HOME/.config/zsh"
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # PATH
@@ -14,7 +12,7 @@ alias diff="diff --color=always"
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # completions
-FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:$ZDOTDIR/site-functions:$FPATH"
+FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:$HOME/.config/zsh/site-functions:$FPATH"
 autoload -Uz compinit
 compinit
 
