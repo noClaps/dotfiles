@@ -17,7 +17,5 @@
   "outline_panel": { "button": false },
   "theme": "ZeroLimits",
   "ui_font_family": ".SystemUIFont",
-  "buffer_font_family": "Menlo",
-  "vim_mode": true,
-  "relative_line_numbers": true
+  "buffer_font_family": "Menlo"
 }
