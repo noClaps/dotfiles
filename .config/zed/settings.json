@@ -15,6 +15,7 @@
   "collaboration_panel": { "button": false },
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
+  "project_panel": { "button": false },
   "theme": "ZeroLimits",
   "ui_font_family": ".SystemUIFont",
   "buffer_font_family": "Menlo"
