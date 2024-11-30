@@ -141,7 +141,7 @@
         "players": [
           {
             "background": "#111",
-            "selection": "#444",
+            "selection": "#333",
             "cursor": "#6d9ded"
           }
         ],
