@@ -1,8 +1,3 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# PATH
-export PATH="$HOME/.local/bin:$HOME/.bun/bin:$PATH"
-
 # CLI tools
 alias ls="ls -Ap1 --color"
 alias rm="rm -rf"
