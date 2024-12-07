@@ -1,0 +1,10 @@
+#!/bin/sh
+
+while IFS= read -r line; do
+    if [[ $line != "# "* && $line != "" ]]; then
+        mkdir -p "$HOME/$(dirname "$line")" || exit
+        if [ ! -L "$HOME/$line" ]; then
+            ln -s "$HOME/dotfiles/$line" "$HOME/$line"
+        fi
+    fi
+done < .syncfiles
