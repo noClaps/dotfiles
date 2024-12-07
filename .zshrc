@@ -15,6 +15,3 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:$HOME/.config/zsh/site-functions:$FPATH"
 autoload -Uz compinit
 compinit
-
-# bun completions
-[ -s "/Users/user/.bun/_bun" ] && source "/Users/user/.bun/_bun"
