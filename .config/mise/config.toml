@@ -1,6 +1,0 @@
-[tools]
-bun = "latest"
-hyperfine = "latest"
-jq = "latest"
-lazygit = "latest"
-usage = "latest"
