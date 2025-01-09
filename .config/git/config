@@ -1,13 +1,15 @@
 [user]
 	name = noClaps
-	email = 04plugs-bios@icloud.com
-	signingKey = ~/.ssh/id_ed25519.pub
+	email = git@zerolimits.dev
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII7+ah+oTm5Nd+nOO6m2dpktgeBjuYU2PAb3cG6BJGGq
 [commit]
 	gpgsign = true
 [tag]
 	gpgsign = true
 [gpg]
 	format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
