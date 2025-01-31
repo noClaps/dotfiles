@@ -1,0 +1,6 @@
+{
+  "New post": {
+    "prefix": "post:new",
+    "body": ["---", "title: $1", "description: $2", "date: $3", "---", "", "$0"]
+  }
+}
