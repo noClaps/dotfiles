@@ -1,4 +1,5 @@
 {
+  "icon_theme": "Zed (Default)",
   "assistant": {
     "button": false,
     "version": "2"
