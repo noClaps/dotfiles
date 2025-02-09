@@ -1,0 +1,7 @@
+id = "zerolimits"
+name = "ZeroLimits"
+version = "0.0.0"
+schema_version = 1
+authors = ["noClaps <contact@zerolimits.dev>"]
+description = "The most interesting boring extension you've ever seen"
+repository = "https://gitlab.com/noClaps/dotfiles"
