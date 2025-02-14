@@ -4,7 +4,7 @@
     "button": false,
     "version": "2"
   },
-  "features": { "inline_completion_provider": "none" },
+  "features": { "edit_prediction_provider": "none" },
   "tabs": {
     "git_status": true
   },
