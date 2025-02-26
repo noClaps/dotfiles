@@ -1,5 +1,5 @@
 # PATH
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/rustup/bin:$HOME/.local/bin:$PATH"
 
 # CLI tools
 alias ls="ls -Ap1 --color"
