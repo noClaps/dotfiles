@@ -6,7 +6,8 @@
   },
   "features": { "edit_prediction_provider": "none" },
   "tabs": {
-    "git_status": true
+    "git_status": true,
+    "file_icons": true
   },
   "autosave": "on_focus_change",
   "chat_panel": { "button": "never" },
@@ -14,8 +15,6 @@
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
   "theme": "ZeroLimits",
-  "ui_font_family": ".SystemUIFont",
-  "buffer_font_family": "Menlo",
   "terminal": {
     "cursor_shape": "bar"
   }
