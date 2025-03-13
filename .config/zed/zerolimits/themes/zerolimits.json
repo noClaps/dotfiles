@@ -105,19 +105,19 @@
         "terminal.ansi.bright_white": "#fff",
         "terminal.ansi.dim_white": "#e5e5e5",
         "link_text.hover": "#6d9ded",
-        "conflict": "#ffd60a",
-        "conflict.background": "#745d00",
-        "conflict.border": "#ffd60a",
-        "created": "#30d158",
-        "created.background": "#004d00",
-        "created.border": "#30d158",
-        "deleted": "#ff453a",
-        "deleted.background": "#530000",
-        "deleted.border": "#ff453a",
-        "error": "#ff453a",
-        "error.background": "#530000",
-        "error.border": "#ff453a",
-        "hidden": "#595959",
+        "conflict": "#fedf7b",
+        "conflict.background": "#b59944",
+        "conflict.border": "#fedf7b",
+        "created": "#64d970",
+        "created.background": "#2e943a",
+        "created.border": "#64d970",
+        "deleted": "#ea3c65",
+        "deleted.background": "#a30d30",
+        "deleted.border": "#ea3c65",
+        "error": "#ea3c65",
+        "error.background": "#a30d30",
+        "error.border": "#ea3c65",
+        "hidden": "#555",
         "hidden.background": "#010101",
         "hidden.border": "#595959",
         "hint": "#6b6b6b",
@@ -125,54 +125,48 @@
         "hint.border": "#6b6b6b",
         "ignored": "#595959",
         "ignored.background": "#010101",
-        "ignored.border": "#595959",
-        "info": "#0a84ff",
-        "info.background": "#001255",
-        "info.border": "#0a84ff",
-        "modified": "#ffd60a",
-        "modified.background": "#745d00",
-        "modified.border": "#ffd60a",
-        "predictive": "#6b6b6b",
-        "predictive.background": "#070707",
-        "predictive.border": "#6b6b6b",
-        "renamed": "#0a84ff",
-        "renamed.background": "#001255",
-        "renamed.border": "#0a84ff",
-        "success": "#30d158",
-        "success.background": "#004d00",
-        "success.border": "#30d158",
-        "unreachable": "#6b6b6b",
-        "unreachable.background": "#070707",
-        "unreachable.border": "#6b6b6b",
-        "warning": "#ffd60a",
-        "warning.background": "#745d00",
-        "warning.border": "#ffd60a",
+        "ignored.border": "#555",
+        "info": "#3984f2",
+        "info.background": "#0949ac",
+        "info.border": "#3984f2",
+        "modified": "#fedf7b",
+        "modified.background": "#b59944",
+        "modified.border": "#fedf7b",
+        "predictive": "#555",
+        "predictive.background": "#010101",
+        "predictive.border": "#555",
+        "renamed": "#3984f2",
+        "renamed.background": "#0949ac",
+        "renamed.border": "#3984f2",
+        "success": "#64d970",
+        "success.background": "#2e943a",
+        "success.border": "#64d970",
+        "unreachable": "#555",
+        "unreachable.background": "#010101",
+        "unreachable.border": "#555",
+        "warning": "#fedf7b",
+        "warning.background": "#b59944",
+        "warning.border": "#fedf7b",
         "players": [
           {
-            "background": "#111",
-            "selection": "#333",
+            "selection": "#222",
             "cursor": "#ff732e"
           }
         ],
         "syntax": {
-          "attribute": {
-            "color": "#c7abe9"
-          },
+          "attribute": { "color": "#c7abe9" },
           "boolean": {
-            "color": "#79b8ff"
+            "color": "#ff732e",
+            "font_weight": 900
           },
-          "comment": {
-            "color": "#aaa"
+          "comment": { "color": "#aaa" },
+          "constant": { "color": "#79b8ff" },
+          "constant.builtin": {
+            "color": "#ff732e",
+            "font_weight": 900
           },
-          "constant": {
-            "color": "#79b8ff"
-          },
-          "constructor": {
-            "color": "#79b8ff"
-          },
-          "enum": {
-            "color": "#b392f1"
-          },
+          "constructor": { "color": "#79b8ff" },
+          "enum": { "color": "#b392f1" },
           "emphasis": {
             "color": "#ff9f5b",
             "font_style": "italic"
@@ -181,66 +175,26 @@
             "color": "#ff9f5b",
             "font_weight": 900
           },
-          "function": {
-            "color": "#b392f1"
-          },
-          "keyword": {
-            "color": "#fa7584"
-          },
-          "label": {
-            "color": "#bbb"
-          },
-          "link.text": {
-            "color": "#ff9f5b"
-          },
-          "link.uri": {
-            "color": "#ff9f5b"
-          },
-          "link_text": {
-            "color": "#ff9f5b"
-          },
-          "link_uri": {
-            "color": "#ff9f5b"
-          },
-          "number": {
-            "color": "#f8f8f8"
-          },
-          "operator": {
-            "color": "#bbb"
-          },
-          "preproc": {
-            "color": "#fa7584"
-          },
-          "property": {
-            "color": "#bbb"
-          },
-          "punctuation": {
-            "color": "#d1d1d1"
-          },
-          "string": {
-            "color": "#ff9f5b"
-          },
-          "string.special.symbol": {
-            "color": "#fed75c"
-          },
-          "tag": {
-            "color": "#ff9f5b"
-          },
-          "text.literal": {
-            "color": "#e394dc"
-          },
-          "title": {
-            "color": "#98989d"
-          },
-          "type": {
-            "color": "#79b8ff"
-          },
-          "variable": {
-            "color": "#bbb"
-          },
-          "variable.special": {
-            "color": "#79b8ff"
-          }
+          "function": { "color": "#b392f1" },
+          "keyword": { "color": "#fa7584" },
+          "label": { "color": "#bbb" },
+          "link.text": { "color": "#ff9f5b" },
+          "link.uri": { "color": "#ff9f5b" },
+          "link_text": { "color": "#ff9f5b" },
+          "link_uri": { "color": "#ff9f5b" },
+          "number": { "color": "#ff732e" },
+          "operator": { "color": "#bbb" },
+          "preproc": { "color": "#fa7584" },
+          "property": { "color": "#bbb" },
+          "punctuation": { "color": "#555" },
+          "string": { "color": "#ff9f5b" },
+          "string.special.symbol": { "color": "#fed75c" },
+          "tag": { "color": "#ff9f5b" },
+          "text.literal": { "color": "#e394dc" },
+          "title": { "color": "#bbb" },
+          "type": { "color": "#79b8ff" },
+          "variable": { "color": "#bbb" },
+          "variable.special": { "color": "#79b8ff" }
         }
       }
     }
