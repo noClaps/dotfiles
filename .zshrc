@@ -28,5 +28,8 @@ function random() {
 
 }
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(mise activate zsh)"
+
 autoload -Uz compinit
 compinit
