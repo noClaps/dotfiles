@@ -14,8 +14,6 @@
   "collaboration_panel": { "button": false },
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
-  "project_panel": { "button": false },
-  "git_panel": { "button": false },
   "theme": "ZeroLimits",
   "terminal": {
     "cursor_shape": "bar",
