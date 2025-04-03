@@ -1,5 +1,6 @@
 # PATH
 export PATH="/opt/homebrew/opt/rustup/bin:$HOME/.local/bin:$PATH"
+export FPATH="$HOME/.local/share/zsh/site-functions:$FPATH"
 
 # CLI tools
 alias ls="ls -Ap1 --color"
