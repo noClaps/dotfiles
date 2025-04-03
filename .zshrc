@@ -1,8 +1,12 @@
+# PATH
+export PATH="/opt/homebrew/opt/rustup/bin:$HOME/.local/bin:$PATH"
+
 # CLI tools
 alias ls="ls -Ap1 --color"
 alias rm="rm -rf"
 alias diff="diff --color=always"
 alias cc="clang -Wall -Wextra -Werror"
+alias ubi="ubi -i $HOME/.local/bin -p"
 
 function random() {
     case $1 in
@@ -26,7 +30,6 @@ function random() {
 }
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(mise activate zsh)"
 
 autoload -Uz compinit
 compinit
