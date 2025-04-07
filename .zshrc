@@ -30,5 +30,7 @@ function random() {
 
 }
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 autoload -Uz compinit
 compinit
