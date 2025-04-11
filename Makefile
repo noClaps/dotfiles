@@ -3,14 +3,11 @@ all: completions configs
 CWD := $(shell pwd)
 
 # completions
-completions: setup-completions bun rust
+completions: setup-completions bun
 setup-completions:
 	@mkdir -p $(HOME)/.local/share/zsh/site-functions
 bun:
 	@bun completions > $(HOME)/.local/share/zsh/site-functions/_bun
-rust:
-	@rustup completions zsh > $(HOME)/.local/share/zsh/site-functions/_rustup
-	@rustup completions zsh cargo > $(HOME)/.local/share/zsh/site-functions/_cargo
 
 # configs
 CONFIGS := $(shell find .config -type f -not -name .DS_Store)
