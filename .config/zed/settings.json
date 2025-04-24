@@ -1,6 +1,6 @@
 {
-  "icon_theme": "Zed (Default)",
   "assistant": {
+    "enabled": false,
     "button": false,
     "version": "2"
   },
@@ -16,8 +16,5 @@
   "outline_panel": { "button": false },
   "git_panel": { "button": false },
   "theme": "ZeroLimits",
-  "terminal": {
-    "cursor_shape": "bar",
-    "button": false
-  }
+  "terminal": { "cursor_shape": "bar" }
 }
