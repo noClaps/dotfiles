@@ -147,39 +147,19 @@
         "warning": "#fedf7b",
         "warning.background": "#b59944",
         "warning.border": "#fedf7b",
-        "players": [
-          {
-            "selection": "#222",
-            "cursor": "#ff732e"
-          }
-        ],
+        "players": [{ "selection": "#222", "cursor": "#ff732e" }],
         "syntax": {
           "attribute": { "color": "#c7abe9" },
-          "boolean": {
-            "color": "#ff732e",
-            "font_weight": 900
-          },
+          "boolean": { "color": "#ff732e", "font_weight": 900 },
           "comment": { "color": "#888" },
           "constant": { "color": "#79b8ff" },
-          "constant.builtin": {
-            "color": "#ff732e",
-            "font_weight": 900
-          },
           "constructor": { "color": "#79b8ff" },
+          "emphasis": { "color": "#ff9f5b", "font_style": "italic" },
+          "emphasis.strong": { "color": "#ff9f5b", "font_weight": 900 },
           "enum": { "color": "#b392f1" },
-          "emphasis": {
-            "color": "#ff9f5b",
-            "font_style": "italic"
-          },
-          "emphasis.strong": {
-            "color": "#ff9f5b",
-            "font_weight": 900
-          },
           "function": { "color": "#b392f1" },
           "keyword": { "color": "#fa7584" },
           "label": { "color": "#ccc" },
-          "link.text": { "color": "#ff9f5b" },
-          "link.uri": { "color": "#ff9f5b" },
           "link_text": { "color": "#ff9f5b" },
           "link_uri": { "color": "#ff9f5b" },
           "number": { "color": "#ff732e" },
