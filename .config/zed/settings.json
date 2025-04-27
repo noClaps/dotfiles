@@ -16,5 +16,7 @@
   "outline_panel": { "button": false },
   "git_panel": { "button": false },
   "theme": "ZeroLimits",
-  "terminal": { "cursor_shape": "bar" }
+  "terminal": { "cursor_shape": "bar" },
+  "buffer_font_family": "Menlo",
+  "ui_font_family": ".SystemUIFont"
 }
