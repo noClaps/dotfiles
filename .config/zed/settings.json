@@ -1,7 +1,6 @@
 {
-  "assistant": {
+  "agent": {
     "enabled": false,
-    "button": false,
     "version": "2"
   },
   "features": { "edit_prediction_provider": "none" },
