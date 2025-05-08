@@ -1,4 +1,5 @@
 {
+  "theme": "Min Dark (Solid)",
   "agent": {
     "enabled": false,
     "version": "2"
