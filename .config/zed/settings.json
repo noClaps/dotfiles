@@ -14,5 +14,5 @@
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
   "git_panel": { "button": false },
-  "terminal": { "cursor_shape": "bar" }
+  "terminal": { "cursor_shape": "bar", "shell": { "program": "fish" } }
 }

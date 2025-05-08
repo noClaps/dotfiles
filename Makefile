@@ -3,13 +3,9 @@ all: completions configs
 CWD := $(shell pwd)
 
 # completions
-completions: setup-completions bun tree-sitter
-setup-completions:
-	@mkdir -p $(HOME)/.local/share/zsh/site-functions
-bun:
-	@bun completions > $(HOME)/.local/share/zsh/site-functions/_bun
+completions: tree-sitter
 tree-sitter:
-	@tree-sitter complete --shell zsh > $(HOME)/.local/share/zsh/site-functions/_tree-sitter
+	@tree-sitter complete --shell fish > $(HOME)/.config/fish/completions/tree-sitter.fish
 
 # configs
 CONFIGS := $(shell find .config -type f -not -name .DS_Store)
@@ -18,4 +14,3 @@ configs:
 	    mkdir -p $(HOME)/`dirname $$FILE`; \
 		ln -sf $(CWD)/$$FILE $(HOME)/$$FILE; \
 	done
-	@ln -sf $(CWD)/.zshrc $(HOME)/.zshrc
