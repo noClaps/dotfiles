@@ -1,14 +1,8 @@
 {
-  "theme": "Min Dark (Solid)",
-  "agent": {
-    "enabled": false,
-    "version": "2"
-  },
+  "theme": { "light": "Ayu Light", "dark": "Ayu Dark" },
+  "agent": { "enabled": false, "version": "2" },
   "features": { "edit_prediction_provider": "none" },
-  "tabs": {
-    "git_status": true,
-    "file_icons": true
-  },
+  "tabs": { "git_status": true, "file_icons": true },
   "autosave": "on_focus_change",
   "chat_panel": { "button": "never" },
   "collaboration_panel": { "button": false },
