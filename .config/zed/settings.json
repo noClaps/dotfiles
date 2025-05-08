@@ -15,5 +15,9 @@
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
   "git_panel": { "button": false },
-  "terminal": { "cursor_shape": "bar", "shell": { "program": "fish" } }
+  "terminal": { "cursor_shape": "bar", "shell": { "program": "fish" } },
+  "ui_font_size": 16,
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_size": 16,
+  "buffer_font_family": "Menlo"
 }
