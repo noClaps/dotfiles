@@ -11,6 +11,7 @@ tree-sitter:
 CONFIGS := $(shell find .config -type f -not -name .DS_Store)
 configs:
 	@for FILE in $(CONFIGS); do \
+		rm -f $(HOME)/$$FILE; \
 	    mkdir -p $(HOME)/`dirname $$FILE`; \
-		ln -sf $(CWD)/$$FILE $(HOME)/$$FILE; \
+		cp $(CWD)/$$FILE $(HOME)/$$FILE; \
 	done
