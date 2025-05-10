@@ -22,10 +22,10 @@ vim.opt.tabstop = 4
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
+vim.keymap.set("n", "<esc>", ":noh<CR><esc>")
 
 require("lazy").setup("plugins")
 require("config.ayu")
 require("config.treesitter")
 require("config.mason")
 require("config.telescope")
-
