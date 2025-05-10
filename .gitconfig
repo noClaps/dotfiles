@@ -1,12 +1,10 @@
 [user]
     name = noClaps
     email = git@zerolimits.dev
-    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII7+ah+oTm5Nd+nOO6m2dpktgeBjuYU2PAb3cG6BJGGq
+    signingkey = ~/.ssh/id_ed25519.pub
 [commit]
     gpgsign = true
 [tag]
     gpgsign = true
 [gpg]
     format = ssh
-[gpg "ssh"]
-    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
