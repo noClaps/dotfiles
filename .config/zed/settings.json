@@ -1,5 +1,4 @@
 {
-  "theme": { "light": "Ayu Light", "dark": "Ayu Dark" },
   "agent": { "enabled": false, "version": "2" },
   "features": { "edit_prediction_provider": "none" },
   "tabs": { "git_status": true, "file_icons": true },
@@ -8,10 +7,5 @@
   "collaboration_panel": { "button": false },
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
-  "git_panel": { "button": false },
-  "terminal": { "cursor_shape": "bar" },
-  "ui_font_size": 16,
-  "ui_font_family": ".SystemUIFont",
-  "buffer_font_size": 16,
-  "buffer_font_family": "Menlo"
+  "git_panel": { "button": false }
 }
