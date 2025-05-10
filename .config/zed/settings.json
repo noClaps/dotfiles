@@ -1,0 +1,20 @@
+{
+  "theme": { "light": "Ayu Light", "dark": "Ayu Dark" },
+  "agent": { "enabled": false, "version": "2" },
+  "features": { "edit_prediction_provider": "none" },
+  "tabs": { "git_status": true, "file_icons": true },
+  "autosave": "on_focus_change",
+  "chat_panel": { "button": "never" },
+  "collaboration_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "outline_panel": { "button": false },
+  "git_panel": { "button": false },
+  "terminal": {
+    "cursor_shape": "bar",
+    "shell": { "program": "/opt/homebrew/bin/fish" }
+  },
+  "ui_font_size": 16,
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_size": 16,
+  "buffer_font_family": "Menlo"
+}
