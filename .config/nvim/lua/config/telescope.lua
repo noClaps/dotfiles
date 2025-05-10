@@ -11,9 +11,15 @@ require("telescope").setup({
                 }
             }
         }
+    },
+    pickers = {
+        find_files = {
+            find_command = { "fd", "-H", "--type", "f", "--strip-cwd-prefix", "--exclude", ".git" }
+        }
     }
 })
 require("telescope").load_extension("file_browser")
 
 vim.keymap.set("n", "<leader><leader>", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
+vim.keymap.set("n", "<leader>f", ":Telescope find_files<CR>")
 vim.keymap.set("n", "<leader>g", ":Telescope live_grep<CR>")
