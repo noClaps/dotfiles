@@ -28,6 +28,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 vim.keymap.set("n", "<esc>", ":noh<CR><esc>")
+vim.diagnostic.config({ virtual_lines = { current_line = true } })
 
 require("config.ayu")
 require("config.mason")
