@@ -6,7 +6,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     if vim.v.shell_error ~= 0 then
         vim.api.nvim_echo({
             { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-            { out, "WarningMsg" },
+            { out,                            "WarningMsg" },
             { "\nPress any key to exit..." },
         }, true, {})
         vim.fn.getchar()
@@ -23,7 +23,9 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 
-require("lazy").setup({
-    spec = { import = "plugins" }
-})
+require("lazy").setup("plugins")
+require("config.ayu")
+require("config.treesitter")
+require("config.mason")
+require("config.telescope")
 
