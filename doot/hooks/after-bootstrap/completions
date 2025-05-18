@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkdir -p $HOME/.local/share/zsh/site-functions
+tree-sitter complete --shell zsh > $HOME/.local/share/zsh/site-functions/_tree-sitter
