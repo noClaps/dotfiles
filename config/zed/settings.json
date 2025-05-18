@@ -1,0 +1,23 @@
+{
+  // Disabling unwanted features
+  "agent": { "enabled": false, "version": "2" },
+  "features": { "edit_prediction_provider": "none" },
+  "collaboration_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "outline_panel": { "button": false },
+  "git_panel": { "button": false },
+  // Themes
+  "icon_theme": "Min Icons",
+  "theme": "Min Dark (Solid)",
+  // Fonts
+  "ui_font_size": 16,
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_size": 16,
+  "buffer_font_family": "Menlo",
+  // Other
+  "autosave": "on_focus_change",
+  "terminal": { "cursor_shape": "bar" },
+  "title_bar": { "show_branch_icon": true },
+  "tab_bar": { "show_nav_history_buttons": false },
+  "tabs": { "file_icons": true, "git_status": true, "show_diagnostics": "all" }
+}
