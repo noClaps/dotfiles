@@ -8,3 +8,8 @@
     gpgsign = true
 [gpg]
     format = ssh
+[core]
+    compression = 9
+[push]
+    autoSetupRemote = true
+    followTags = true
