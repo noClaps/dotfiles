@@ -7,8 +7,8 @@
   "outline_panel": { "button": false },
   "git_panel": { "button": false },
   // Themes
-  "icon_theme": "Min Icons",
-  "theme": "Min Dark (Solid)",
+  "icon_theme": "Catppuccin Mocha",
+  "theme": "Catppuccin Mocha",
   // Fonts
   "ui_font_size": 16,
   "ui_font_family": ".SystemUIFont",
