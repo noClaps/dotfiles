@@ -6,9 +6,12 @@
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
   "git_panel": { "button": false },
-  // Themes
-  "icon_theme": "Catppuccin Mocha",
-  "theme": "Catppuccin Mocha",
+  "search": { "button": false },
+  "project_panel": { "button": false },
+  "diagnostics": {
+    "button": false,
+    "inline": { "enabled": true }
+  },
   // Fonts
   "ui_font_size": 16,
   "ui_font_family": ".SystemUIFont",
@@ -17,7 +20,10 @@
   // Other
   "autosave": "on_focus_change",
   "terminal": { "cursor_shape": "bar" },
-  "title_bar": { "show_branch_icon": true },
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_onboarding_banner": false
+  },
   "tab_bar": { "show_nav_history_buttons": false },
   "tabs": { "file_icons": true, "git_status": true, "show_diagnostics": "all" }
 }
