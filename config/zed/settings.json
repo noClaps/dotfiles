@@ -12,6 +12,7 @@
     "button": false,
     "inline": { "enabled": true }
   },
+  "tab_bar": { "show": false },
   // Fonts
   "ui_font_size": 16,
   "ui_font_family": ".SystemUIFont",
@@ -24,6 +25,4 @@
     "show_branch_icon": true,
     "show_onboarding_banner": false
   },
-  "tab_bar": { "show_nav_history_buttons": false },
-  "tabs": { "file_icons": true, "git_status": true, "show_diagnostics": "all" }
 }
