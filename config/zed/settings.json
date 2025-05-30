@@ -20,7 +20,7 @@
   "buffer_font_family": "Menlo",
   // Other
   "autosave": "on_focus_change",
-  "terminal": { "cursor_shape": "bar" },
+  "terminal": { "cursor_shape": "bar", "button": false },
   "title_bar": {
     "show_branch_icon": true,
     "show_onboarding_banner": false
