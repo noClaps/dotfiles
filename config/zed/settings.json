@@ -1,28 +1,29 @@
 {
   // Disabling unwanted features
   "agent": { "enabled": false, "version": "2" },
-  "features": { "edit_prediction_provider": "none" },
   "collaboration_panel": { "button": false },
+  "features": { "edit_prediction_provider": "none" },
+  "git_panel": { "button": false },
+  "git": { "inline_blame": { "enabled": false } },
   "notification_panel": { "button": false },
   "outline_panel": { "button": false },
-  "git_panel": { "button": false },
-  "search": { "button": false },
   "project_panel": { "button": false },
-  "diagnostics": {
-    "button": false,
-    "inline": { "enabled": true }
+  "search": { "button": false },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
-  "tab_bar": { "show": false },
+  "telemetry": { "metrics": false, "diagnostics": false },
+  "toolbar": { "agent_review": false, "quick_actions": false },
   // Fonts
-  "ui_font_size": 16,
-  "ui_font_family": ".SystemUIFont",
-  "buffer_font_size": 16,
   "buffer_font_family": "Menlo",
-  // Other
+  "buffer_font_size": 16,
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 16,
+  // Features
   "autosave": "on_focus_change",
+  "code_actions_on_format": { "source.organizeImports": true },
+  "diagnostics": { "button": false, "inline": { "enabled": true } },
   "terminal": { "cursor_shape": "bar", "button": false },
-  "title_bar": {
-    "show_onboarding_banner": false,
-    "show_sign_in": false
-  }
+  "title_bar": { "show_onboarding_banner": false, "show_sign_in": false }
 }
