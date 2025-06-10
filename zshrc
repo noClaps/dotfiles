@@ -1,4 +1,3 @@
-export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 export FPATH="$HOME/.local/share/zsh/site-functions:$FPATH"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
