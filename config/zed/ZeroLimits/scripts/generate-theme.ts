@@ -189,7 +189,7 @@ const theme = {
   "ghost_element.active": colors.elevatedBackground,
   "ghost_element.background": colors.transparent,
   "ghost_element.disabled": colors.transparent,
-  "ghost_element.hover": colors.activeBackground,
+  "ghost_element.hover": colors.elevatedBackground,
   "ghost_element.selected": colors.elevatedBackground,
 
   // Hidden
