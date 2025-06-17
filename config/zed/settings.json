@@ -14,6 +14,7 @@
     "show_tab_bar_buttons": false
   },
   "telemetry": { "metrics": false, "diagnostics": false },
+  "title_bar": { "show_onboarding_banner": false, "show_sign_in": false },
   "toolbar": { "agent_review": false, "quick_actions": false },
   // Fonts
   "buffer_font_family": "Menlo",
@@ -24,6 +25,5 @@
   "autosave": "on_focus_change",
   "code_actions_on_format": { "source.organizeImports": true },
   "diagnostics": { "button": false, "inline": { "enabled": true } },
-  "terminal": { "cursor_shape": "bar", "button": false },
-  "title_bar": { "show_onboarding_banner": false, "show_sign_in": false }
+  "terminal": { "cursor_shape": "bar", "button": false }
 }
