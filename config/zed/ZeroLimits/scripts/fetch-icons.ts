@@ -13,7 +13,7 @@ await Promise.all(chevrons.map((f) => fetch(f)))
       Bun.write(
         // @ts-ignore
         `${import.meta.dir}/../icons/chevron/${filename}`,
-        svgs[i].replaceAll(`stroke="currentColor"`, `stroke="#ccc"`),
+        svgs[i].replaceAll(`stroke="currentColor"`, `stroke="#aaa"`),
       );
     }
   });
@@ -33,7 +33,7 @@ await Promise.all(directories.map((f) => fetch(f)))
       Bun.write(
         // @ts-ignore
         `${import.meta.dir}/../icons/directory/${filename}`,
-        svgs[i].replaceAll(`stroke="currentColor"`, `stroke="#ccc"`),
+        svgs[i].replaceAll(`stroke="currentColor"`, `stroke="#aaa"`),
       );
     }
   });
@@ -99,7 +99,7 @@ await Promise.all(files.map((f) => fetch(f)))
       Bun.write(
         // @ts-ignore
         `${import.meta.dir}/../icons/file/${filename}`,
-        svgs[i].replaceAll(`stroke="currentColor"`, `stroke="#ccc"`),
+        svgs[i].replaceAll(`stroke="currentColor"`, `stroke="#ff732e"`),
       );
     }
   });
