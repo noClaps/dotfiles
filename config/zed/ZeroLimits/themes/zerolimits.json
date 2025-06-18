@@ -191,7 +191,7 @@
         "tab_bar.background": "#222",
 
         // terminal
-        // black: "#1c1c1e", brightBlack: "#000",
+        // black: "#1c1c1e", brightBlack: "#666",
         // red: "#ff4245", brightRed: "#f00",
         // green: "#30d158", brightGreen: "#0f0",
         // yellow: "#ffd600", brightYellow: "#ff0",
@@ -211,7 +211,7 @@
         "terminal.ansi.cyan": "#3cd3fe",
         "terminal.ansi.white": "#f2f2f7",
         "terminal.bright_foreground": "#ccc",
-        "terminal.ansi.bright_black": "#000",
+        "terminal.ansi.bright_black": "#666",
         "terminal.ansi.bright_red": "#f00",
         "terminal.ansi.bright_green": "#0f0",
         "terminal.ansi.bright_yellow": "#ff0",
