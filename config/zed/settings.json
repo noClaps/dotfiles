@@ -16,6 +16,7 @@
   "telemetry": { "metrics": false, "diagnostics": false },
   "title_bar": { "show_onboarding_banner": false, "show_sign_in": false },
   "toolbar": { "agent_review": false, "quick_actions": false },
+  "gutter": { "runnables": false },
   // Fonts
   "buffer_font_family": "Menlo",
   "buffer_font_size": 16,
