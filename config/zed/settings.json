@@ -31,6 +31,7 @@
   "terminal": {
     "cursor_shape": "bar",
     "button": false,
-    "shell": { "program": "/opt/homebrew/bin/fish" }
+    "shell": { "program": "/opt/homebrew/bin/fish" },
+    "toolbar": { "breadcrumbs": false }
   }
 }
