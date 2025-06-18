@@ -1,5 +1,6 @@
 if status is-interactive
     set -g fish_private_mode true
+    set -g fish_history
     function fish_greeting
     end
 
