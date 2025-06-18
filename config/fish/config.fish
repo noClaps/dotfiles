@@ -1,5 +1,7 @@
 if status is-interactive
-    set -U fish_greeting
+    set -g fish_private_mode true
+    function fish_greeting
+    end
 
     # CLI tools
     alias ls='ls -Ap1 --color'
