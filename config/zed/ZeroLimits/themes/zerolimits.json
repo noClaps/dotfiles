@@ -300,7 +300,7 @@
           "string": { "color": "#ff9f5b" },
           "string.escape": { "color": "#aaa" },
           "tag": { "color": "#ff6b68" },
-          "text.literal": { "color": "#ccc" },
+          "text.literal": { "color": "#ff9f5b" },
           "title": { "font_weight": 700 },
           "type": { "color": "#ff9f5b" },
           "variable": { "color": "#ccc" }
