@@ -1,0 +1,3 @@
+**/*.* linguist-detectable=true
+config/git/attributes linguist-language=gitattributes linguist-detectable=true
+config/git/config linguist-language=gitconfig linguist-detectable=true
