@@ -1,6 +1,6 @@
 {
   // Disabling unwanted features
-  "agent": { "enabled": false, "version": "2" },
+  "agent": { "enabled": false },
   "collaboration_panel": { "button": false },
   "features": { "edit_prediction_provider": "none" },
   "git_panel": { "button": false },
