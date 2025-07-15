@@ -108,6 +108,12 @@ body._0_auto-sug .search-input-container {
     border: none;
 }
 
+#top-parent,
+#top-parent a,
+#top-parent i {
+    color: var(--dim-text);
+}
+
 ._0_rank-icons use[href="#icon_shield_warning"] {
     color: var(--red);
 }
