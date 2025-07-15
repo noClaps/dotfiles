@@ -9,6 +9,7 @@
     --light-text: #fff;
     --dim-text: #aaa;
     --dimmer-text: #666;
+    --red: #ea3c65;
 
     --app-bg: var(--bg);
 
@@ -99,4 +100,8 @@ body._0_auto-sug .search-input-container {
 
 * {
     font-family: system-ui;
+}
+
+._0_rank-icons use[href="#icon_shield_warning"] {
+    color: var(--red);
 }
