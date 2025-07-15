@@ -30,6 +30,8 @@
     --search-result-content-text: var(--dim-text);
 
     --result-item-title-border: var(--dimmer-text);
+
+    --primary-visited: oklch(from var(--accent) l 0.1 h);
 }
 
 .k_ui_toggle_switch input:checked ~ .k_ui_toggle_switch_bar,
