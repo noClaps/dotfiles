@@ -20,6 +20,7 @@
     --primary-hover: var(--accent);
 
     --modal-bg: var(--light-bg);
+    --related-item-bg: var(--light-bg);
 
     --color-search-input: var(--lighter-bg);
     --hover-bg: var(--lighter-bg);
