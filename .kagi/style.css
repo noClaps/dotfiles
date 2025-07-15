@@ -102,6 +102,11 @@ body._0_auto-sug .search-input-container {
     font-family: system-ui;
 }
 
+.app-nav,
+.wikipediaTable {
+    border: none;
+}
+
 ._0_rank-icons use[href="#icon_shield_warning"] {
     color: var(--red);
 }
