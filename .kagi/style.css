@@ -10,6 +10,8 @@
     --dim-text: #aaa;
     --dimmer-text: #666;
     --red: #ea3c65;
+    --green: #64d970;
+    --yellow: #fedf7b;
 
     --app-bg: var(--bg);
 
@@ -24,6 +26,8 @@
 
     --color-search-input: var(--lighter-bg);
     --hover-bg: var(--lighter-bg);
+    --input-bg: var(--lighter-bg);
+    --secondary: var(--lighter-bg);
 
     --search-result-title: var(--text);
     --search-result-url-link: var(--text);
@@ -110,4 +114,24 @@ body._0_auto-sug .search-input-container {
 
 ._0_rank-icons use[href="#icon_shield_warning"] {
     color: var(--red);
+}
+
+.d-info-body {
+    background-color: var(--light-bg);
+}
+
+.rakned-box-close {
+    color: var(--light-bg);
+}
+
+.d-info-box-title-header {
+    background: var(--green);
+}
+
+.d-info-box-title-header.--trackers {
+    background: var(--yellow);
+}
+
+.k_ui_btn_group .k_ui_btn {
+    color: var(--text);
 }
