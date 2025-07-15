@@ -96,3 +96,7 @@ body._0_auto-sug .search-input-container {
     padding: 1rem 0;
     border-radius: 0;
 }
+
+* {
+    font-family: system-ui;
+}
