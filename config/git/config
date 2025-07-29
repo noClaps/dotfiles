@@ -16,3 +16,5 @@
 [maintenance]
 	auto = true
 	strategy = incremental
+[pull]
+	rebase = true
