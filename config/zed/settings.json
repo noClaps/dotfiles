@@ -1,8 +1,7 @@
 {
   // Disabling unwanted features
-  "agent": { "enabled": false },
+  "disable_ai": true,
   "collaboration_panel": { "button": false },
-  "features": { "edit_prediction_provider": "none" },
   "git_panel": { "button": false },
   "git": { "inline_blame": { "enabled": false } },
   "notification_panel": { "button": false },
@@ -15,7 +14,7 @@
   },
   "telemetry": { "metrics": false, "diagnostics": false },
   "title_bar": { "show_onboarding_banner": false, "show_sign_in": false },
-  "toolbar": { "agent_review": false, "quick_actions": false },
+  "toolbar": { "quick_actions": false },
   "gutter": { "runnables": false, "breakpoints": false },
   "debugger": { "button": false },
   // Fonts
