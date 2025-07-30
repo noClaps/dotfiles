@@ -8,9 +8,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # CLI tools
 alias ls='ls -Ap1 --color'
 
-# bun completions
-[ -s "/Users/user/.bun/_bun" ] && source "/Users/user/.bun/_bun"
-
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
@@ -26,3 +23,6 @@ export PATH="$HOME/go/bin:$PATH"
 
 autoload -Uz compinit
 compinit -d $HOME/.cache/zsh/zcompdump
+
+# bun completions
+[ -s "/Users/user/.bun/_bun" ] && source "/Users/user/.bun/_bun"
