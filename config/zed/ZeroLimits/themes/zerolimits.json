@@ -12,7 +12,7 @@
         // red: "#ea3c65",
         // green: "#64d970", lightGreen: "#d5f5d9",
         // yellow: "#fedf7b", lightYellow: "#fff5d8", darkYellow: "#876c06",
-        // blue: "#3984f2", lightBlue: "#ccdefc",
+        // blue: "#3984f2",
         // accent: "#ff732e",
         // transparent: "#0000",
 
@@ -118,7 +118,7 @@
 
         // info
         "info": "#3984f2",
-        "info.background": "#ccdefc",
+        "info.background": "#3984f2",
         "info.border": "#3984f2",
 
         // link text
@@ -158,7 +158,7 @@
 
         // renamed
         "renamed": "#3984f2",
-        "renamed.background": "#ccdefc",
+        "renamed.background": "#3984f2",
         "renamed.border": "#3984f2",
 
         // scrollbar
