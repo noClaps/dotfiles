@@ -8,16 +8,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # CLI tools
 alias ls='ls -Ap1 --color'
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# fnm
-FNM_PATH="/opt/homebrew/opt/fnm/bin"
-if [ -d "$FNM_PATH" ]; then
-  eval "`fnm env`"
-fi
-
 # go
 export PATH="$HOME/go/bin:$PATH"
 
@@ -26,3 +16,8 @@ compinit -d $HOME/.cache/zsh/zcompdump
 
 # bun completions
 [ -s "/Users/user/.bun/_bun" ] && source "/Users/user/.bun/_bun"
+
+# pkg
+export PKG_HOME="/Users/user/.pkg"
+export PATH="$PKG_HOME/bin:$PATH"
+export FPATH="$PKG_HOME/share/zsh/site-functions:$FPATH"
