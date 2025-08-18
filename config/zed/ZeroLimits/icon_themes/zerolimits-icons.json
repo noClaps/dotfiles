@@ -61,6 +61,7 @@
         "csharp": { "path": "./icons/file/csharp.svg" },
         "css": { "path": "./icons/file/css.svg" },
         "default": { "path": "./icons/file/text.svg" },
+        "docker": { "path": "./icons/file/docker.svg" },
         "env": { "path": "./icons/file/container.svg" },
         "favicon": { "path": "./icons/file/favicon.svg" },
         "font": { "path": "./icons/file/type.svg" },

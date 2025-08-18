@@ -49,6 +49,7 @@ const files = [
   "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/cpp.svg",
   "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/csharp.svg",
   "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/css.svg",
+  "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/docker.svg",
   "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/favicon.svg",
   "https://github.com/lucide-icons/lucide/raw/refs/heads/main/icons/file-text.svg",
   "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/git.svg",
