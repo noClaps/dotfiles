@@ -86,6 +86,7 @@ const files = [
   "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/tsconfig.svg",
   "https://github.com/lucide-icons/lucide/raw/refs/heads/main/icons/type.svg",
   "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/typescript.svg",
+  "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/vue.svg",
   "https://github.com/material-extensions/vscode-material-icon-theme/raw/refs/heads/main/icons/yaml.svg",
 ];
 

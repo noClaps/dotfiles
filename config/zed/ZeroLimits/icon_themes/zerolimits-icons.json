@@ -99,6 +99,7 @@
         "tsconfig": { "path": "./icons/file/tsconfig.svg" },
         "typescript": { "path": "./icons/file/typescript.svg" },
         "vcs": { "path": "./icons/file/git.svg" },
+        "vue": { "path": "./icons/file/vue.svg" },
         "yaml": { "path": "./icons/file/yaml.svg" }
       }
     }
