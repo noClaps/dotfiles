@@ -18,3 +18,5 @@
 	strategy = incremental
 [pull]
 	rebase = true
+[fetch]
+	prune = true
