@@ -23,7 +23,6 @@
   "ui_font_family": ".SystemUIFont",
   "ui_font_size": 16,
   "theme": "ZeroLimits",
-  "icon_theme": "ZeroLimits Icons",
   // Features
   "autosave": "on_focus_change",
   "code_actions_on_format": { "source.organizeImports": true },
