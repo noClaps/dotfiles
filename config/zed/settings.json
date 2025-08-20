@@ -28,5 +28,6 @@
   "autosave": "on_focus_change",
   "code_actions_on_format": { "source.organizeImports": true },
   "diagnostics": { "button": false, "inline": { "enabled": true } },
-  "terminal": { "cursor_shape": "bar", "button": false }
+  "terminal": { "cursor_shape": "bar", "button": false },
+  "hover_popover_delay": 0
 }
