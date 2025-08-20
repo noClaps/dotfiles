@@ -20,8 +20,7 @@
   // Fonts
   "buffer_font_family": "Menlo",
   "buffer_font_size": 16,
-  "ui_font_family": ".SystemUIFont",
-  "ui_font_size": 16,
+  "ui_font_family": "Menlo",
   "theme": "ZeroLimits",
   // Features
   "autosave": "on_focus_change",
