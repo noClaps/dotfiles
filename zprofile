@@ -17,5 +17,8 @@ export FPATH="$PKG_HOME/share/zsh/site-functions:$FPATH"
 autoload -Uz compinit
 compinit -d $HOME/.cache/zsh/zcompdump
 
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # bun completions
 [ -s "/Users/user/.bun/_bun" ] && source "/Users/user/.bun/_bun"
