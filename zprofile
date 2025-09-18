@@ -6,19 +6,12 @@ zstyle ':completion::complete:*' cache-path "$HOME/.cache/zsh/zcompcache"
 # CLI tools
 alias ls='ls -Ap1 --color'
 
-# go
-export PATH="$HOME/go/bin:$PATH"
-
-# pkg
-export PKG_HOME="/Users/user/.pkg"
-export PATH="$PKG_HOME/bin:$PATH"
-export FPATH="$PKG_HOME/share/zsh/site-functions:$FPATH"
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 autoload -Uz compinit
 compinit -d $HOME/.cache/zsh/zcompdump
 
 # rust
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-
-# bun completions
-[ -s "/Users/user/.bun/_bun" ] && source "/Users/user/.bun/_bun"
