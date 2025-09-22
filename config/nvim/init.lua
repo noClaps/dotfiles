@@ -29,6 +29,10 @@ vim.o.mouse = "a"
 vim.cmd(":colorscheme default")
 vim.api.nvim_create_user_command("Q", "q", {}) -- alias :Q to :q
 vim.api.nvim_create_user_command("W", "w", {}) -- alias :W to :w
+vim.diagnostic.config({
+	virtual_text = true,
+	virtual_lines = true,
+})
 
 -- plugins
 require("lazy").setup({
