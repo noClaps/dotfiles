@@ -25,7 +25,6 @@ vim.o.winborder = "rounded"
 vim.o.clipboard = "unnamedplus"
 vim.o.cursorline = true
 vim.o.signcolumn = "yes"
-vim.cmd(":colorscheme default")
 
 -- plugins
 require("lazy").setup({
