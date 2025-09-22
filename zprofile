@@ -12,9 +12,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 autoload -Uz compinit
 compinit -d $HOME/.cache/zsh/zcompdump
 
-# rust
-export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # local binaries
 export PATH="$HOME/.local/bin:$PATH"
