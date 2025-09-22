@@ -1,5 +1,5 @@
 return {
-	"lewis6991/ts-install.nvim",
+	"mks-h/treesitter-autoinstall.nvim",
 	dependencies = {
 		{
 			"nvim-treesitter/nvim-treesitter",
@@ -10,6 +10,6 @@ return {
 		}
 	},
 	opts = {
-		auto_install = true
+		highlight = true
 	},
 }
