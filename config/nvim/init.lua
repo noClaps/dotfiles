@@ -29,8 +29,9 @@ vim.o.clipboard = "unnamedplus"
 vim.o.cursorline = true
 vim.o.signcolumn = "yes"
 vim.o.mouse = "a"
-vim.api.nvim_create_user_command("Q", "q", {}) -- alias :Q to :q
-vim.api.nvim_create_user_command("W", "w", {}) -- alias :W to :w
+vim.api.nvim_create_user_command("Q", "q", {})              -- alias :Q to :q
+vim.api.nvim_create_user_command("Q", "q", { bang = true }) -- alias :Q! to :q!
+vim.api.nvim_create_user_command("W", "w", {})              -- alias :W to :w
 vim.diagnostic.config({
     virtual_text = true,
     virtual_lines = true,
