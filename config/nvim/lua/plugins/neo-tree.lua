@@ -10,10 +10,7 @@ return {
     ---@type neotree.Config?
     opts = {
         filesystem = {
-            window = {
-                auto_expand_width = true,
-                width = 0
-            },
+            window = { position = "current" },
             filtered_items = {
                 visible = true,
                 never_show = { ".git" },
