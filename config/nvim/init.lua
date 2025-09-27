@@ -45,7 +45,7 @@ require("lazy").setup({
 })
 
 -- keybinds
-vim.keymap.set("n", "<leader><leader>", ":Neotree toggle<CR>")
+vim.keymap.set("n", "<leader><leader>", ":Oil<CR>")
 vim.keymap.set("n", "<ESC>", ":nohlsearch<CR>")
 
 -- autocmds
