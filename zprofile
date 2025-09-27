@@ -10,6 +10,9 @@ alias mkdir='mkdir -p'
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# rust
+export PATH="$HOMEBREW_PREFIX/opt/rustup/bin:$PATH"
+
 autoload -Uz compinit
 compinit -d $HOME/.cache/zsh/zcompdump
 
