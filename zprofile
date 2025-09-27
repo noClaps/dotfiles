@@ -5,6 +5,7 @@ zstyle ':completion::complete:*' cache-path "$HOME/.cache/zsh/zcompcache"
 
 # CLI tools
 alias ls='ls -Ap1 --color'
+alias mkdir='mkdir -p'
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
