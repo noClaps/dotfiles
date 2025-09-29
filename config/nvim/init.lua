@@ -36,7 +36,7 @@ vim.diagnostic.config({
     virtual_text = true,
     virtual_lines = true,
 })
-vim.cmd(":colorscheme default")
+vim.cmd("colorscheme zerolimits")
 
 -- plugins
 require("lazy").setup({

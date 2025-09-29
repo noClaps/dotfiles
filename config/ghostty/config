@@ -3,3 +3,4 @@ window-colorspace = display-p3
 window-height = 41
 window-width = 146
 bold-is-bright = true
+theme = ZeroLimits
