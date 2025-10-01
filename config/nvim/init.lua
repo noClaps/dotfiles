@@ -29,6 +29,11 @@ vim.o.clipboard = "unnamedplus"
 vim.o.cursorline = true
 vim.o.signcolumn = "yes"
 vim.o.mouse = "a"
+vim.o.completeopt = "noselect,menuone,popup"
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.autoindent = true
+vim.o.smartindent = true
 vim.api.nvim_create_user_command("Q", "q", {})              -- alias :Q to :q
 vim.api.nvim_create_user_command("Q", "q", { bang = true }) -- alias :Q! to :q!
 vim.api.nvim_create_user_command("W", "w", {})              -- alias :W to :w
@@ -47,3 +52,25 @@ require("lazy").setup({
 -- keybinds
 vim.keymap.set("n", "<leader><leader>", ":Oil<CR>")
 vim.keymap.set("n", "<ESC>", ":nohlsearch<CR>")
+vim.keymap.set("i", "<C-space>", "<C-x><C-o>")
+vim.keymap.set({ "i", "s" }, "<Tab>", function()
+    if vim.fn.pumvisible() == 1 then
+        return "<C-n>"
+    elseif vim.snippet.active({ direction = 1 }) then
+        return "<cmd>lua vim.snippet.jump(1)<CR>"
+    else
+        return "<Tab>"
+    end
+end, { expr = true, noremap = true })
+vim.keymap.set("i", "<S-Tab>", function()
+    if vim.fn.pumvisible() == 1 then
+        return "<C-p>"
+    elseif vim.snippet.active({ direction = -1 }) then
+        return "<cmd>lua vim.snippet.jump(-1)<CR>"
+    else
+        return "<S-Tab>"
+    end
+end, { expr = true, noremap = true })
+vim.keymap.set("i", "<CR>", function()
+    return vim.fn.pumvisible() == 1 and "<C-y>" or "<CR>"
+end, { expr = true, noremap = true })
