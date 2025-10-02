@@ -34,7 +34,7 @@ local groups = {
     Cursor = { fg = colors.accent, bg = colors.accent },
     StatusLine = { fg = colors.mutedText, bg = colors.activeBackground },
     StatusLineNC = { fg = colors.extraMutedText, bg = colors.background },
-    Visual = { bg = colors.accent },
+    Visual = { bg = colors.elevatedBackground },
 
     -- syntax
     ["@attribute"] = { fg = syntaxColors.green },
