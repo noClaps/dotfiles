@@ -1,5 +1,4 @@
 return {
-
     "neovim/nvim-lspconfig",
     config = function()
         vim.lsp.enable({
@@ -13,7 +12,6 @@ return {
             "tombi",
         })
         vim.lsp.config.lua_ls = {
-
             settings = {
                 Lua = {
                     diagnostics = { globals = { "vim" } },
@@ -38,7 +36,6 @@ return {
                 if client:supports_method("textDocument/completion") then
                     local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
                     client.server_capabilities.completionProvider.triggerCharacters = chars
-
                     vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
                 end
             end
