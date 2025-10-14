@@ -1,0 +1,31 @@
+{
+  // Disabling unwanted features
+  "disable_ai": true,
+  "collaboration_panel": { "button": false },
+  "git_panel": { "button": false },
+  "git": { "inline_blame": { "enabled": false } },
+  "notification_panel": { "button": false },
+  "outline_panel": { "button": false },
+  "project_panel": { "button": false },
+  "search": { "button": false },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+  "telemetry": { "metrics": false, "diagnostics": false },
+  "title_bar": { "show_onboarding_banner": false, "show_sign_in": false },
+  "toolbar": { "quick_actions": false },
+  "gutter": { "runnables": false, "breakpoints": false },
+  "debugger": { "button": false },
+  // Fonts
+  "buffer_font_family": "Menlo",
+  "buffer_font_size": 16,
+  "ui_font_family": ".SystemUIFont",
+  "theme": "ZeroLimits",
+  // Features
+  "autosave": "on_focus_change",
+  "code_actions_on_format": { "source.organizeImports": true },
+  "diagnostics": { "inline": { "enabled": true } },
+  "terminal": { "cursor_shape": "bar", "button": false },
+  "hover_popover_delay": 0
+}
