@@ -24,7 +24,11 @@
   "theme": "ZeroLimits",
   // Features
   "autosave": "on_focus_change",
-  "code_actions_on_format": { "source.organizeImports": true },
+  "formatter": [
+    { "code_action": "source.organizeImports" },
+    { "code_action": "source.fixAll" },
+    "auto"
+  ],
   "diagnostics": { "inline": { "enabled": true } },
   "terminal": { "cursor_shape": "bar", "button": false },
   "hover_popover_delay": 0
