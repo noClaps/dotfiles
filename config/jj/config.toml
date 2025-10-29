@@ -6,6 +6,7 @@ email = "git@zerolimits.dev"
 
 [ui]
 default-command = "log"
+editor = "zed --wait"
 
 [signing]
 behavior = "own"
