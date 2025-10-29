@@ -1,13 +1,3 @@
-[user]
-    name = noClaps
-    email = git@zerolimits.dev
-    signingkey = ~/.ssh/id_ed25519.pub
-[commit]
-    gpgsign = true
-[tag]
-    gpgsign = true
-[gpg]
-    format = ssh
 [core]
     compression = 9
 [push]
