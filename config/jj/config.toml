@@ -8,6 +8,7 @@ email = "git@zerolimits.dev"
 default-command = "log"
 editor = "zed --wait"
 paginate = "never"
+diff-editor = ":builtin"
 
 [signing]
 behavior = "own"
