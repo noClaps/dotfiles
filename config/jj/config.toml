@@ -19,5 +19,5 @@ key = "/Users/user/.ssh/id_ed25519.pub"
 sign-on-push = true
 colocate = true
 
-[experimental-advance-branches]
-enabled-branches = ["glob:*"]
+[aliases]
+advance = ["bookmark", "move", "main", "--to", "@-"]
