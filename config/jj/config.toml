@@ -19,5 +19,8 @@ key = "/Users/user/.ssh/id_ed25519.pub"
 sign-on-push = true
 colocate = true
 
+[snapshot]
+max-new-file-size = 1278420
+
 [aliases]
 advance = ["bookmark", "move", "main", "--to", "@-"]
