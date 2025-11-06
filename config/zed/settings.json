@@ -27,6 +27,5 @@
     "auto"
   ],
   "diagnostics": { "inline": { "enabled": true } },
-  "terminal": { "cursor_shape": "bar", "button": false },
-  "hover_popover_delay": 0
+  "terminal": { "cursor_shape": "bar", "button": false }
 }
