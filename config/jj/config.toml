@@ -20,7 +20,7 @@ sign-on-push = true
 colocate = true
 
 [snapshot]
-max-new-file-size = 1278420
+max-new-file-size = 0
 
 [aliases]
 advance = ["bookmark", "move", "main", "--to", "@-"]
