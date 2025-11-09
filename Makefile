@@ -14,6 +14,7 @@ jj:
 
 zed:
 	ln -snf $(PWD)/config/zed/settings.json $(HOME)/.config/zed/settings.json
+	ln -snf $(PWD)/config/zed/themes/zerolimits.json $(HOME)/.config/zed/themes/zerolimits.json
 
 other:
 	ln -snf $(PWD)/hushlogin $(HOME)/.hushlogin
