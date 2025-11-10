@@ -7,7 +7,7 @@
       "name": "ZeroLimits",
       "appearance": "dark",
       "style": {
-        // background: "#222", activeBackground: "#282828", elevatedBackground: "#333",
+        // background: "#222", activeBackground: "#282828", elevatedBackground: "#333", brightBackground: "#444"
         // text: "#ccc", mutedText: "#aaa", extraMutedText: "#666",
         // red: "#ea3c65",
         // green: "#64d970", lightGreen: "#d5f5d9",
@@ -111,14 +111,14 @@
         "icon.muted": "#aaa",
         "icon.placeholder": "#aaa",
 
-        // ignorede
+        // ignored
         "ignored": "#666",
         "ignored.background": "#222",
         "ignored.border": "#333",
 
         // info
         "info": "#3984f2",
-        "info.background": "#3984f2",
+        "info.background": "#282828",
         "info.border": "#3984f2",
 
         // link text
@@ -148,7 +148,7 @@
 
         // players
         "players": [
-          { "background": "#333", "selection": "#333", "cursor": "#ff732e" }
+          { "background": "#333", "selection": "#444", "cursor": "#ff732e" }
         ],
 
         // predictive
