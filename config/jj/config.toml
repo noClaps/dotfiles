@@ -6,7 +6,6 @@ email = "git@zerolimits.dev"
 
 [ui]
 default-command = "log"
-editor = "zed --wait"
 paginate = "never"
 diff-editor = ":builtin"
 
