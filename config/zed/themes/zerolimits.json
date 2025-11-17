@@ -255,11 +255,6 @@
         "version_control.renamed": "#3984f2",
         "version_control.conflict": "#fedf7b",
         "version_control.modified": "#fedf7b",
-        "version_control.conflict.divider_background": "#282828",
-        "version_control.conflict.ours_background": "#d5f5d9",
-        "version_control.conflict.ours_marker_background": "#64d970",
-        "version_control.conflict.theirs_background": "#fff5d8",
-        "version_control.conflict.theirs_marker_background": "#fedf7b",
 
         // warning
         "warning": "#fedf7b",
