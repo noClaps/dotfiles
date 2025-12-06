@@ -30,5 +30,20 @@
     "auto"
   ],
   "diagnostics": { "inline": { "enabled": true } },
-  "terminal": { "cursor_shape": "bar", "button": false }
+  "terminal": { "cursor_shape": "bar", "button": false },
+  // LSP
+  "lsp": {
+    "tinymist": {
+      "settings": {
+        "exportTarget": "html",
+        "syntaxOnly": "enable",
+        "formatterMode": "typstyle"
+      }
+    }
+  },
+  "languages": {
+    "Typst": {
+      "soft_wrap": "editor_width"
+    }
+  }
 }
