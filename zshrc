@@ -14,11 +14,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$HOMEBREW_PREFIX/opt/rustup/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# go
+export PATH="$HOME/go/bin:$PATH"
+
 autoload -Uz compinit
 compinit -d $HOME/.cache/zsh/zcompdump
-
-# local binaries
-export PATH="$HOME/.local/bin:$PATH"
 
 export HISTFILE=/dev/null
 export PS1="%1~ %# "
