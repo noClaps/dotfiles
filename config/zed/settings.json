@@ -10,10 +10,14 @@
   "search": { "button": false },
   "tab_bar": {
     "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
+    "show_tab_bar_buttons": false,
   },
   "telemetry": { "metrics": false, "diagnostics": false },
-  "title_bar": { "show_onboarding_banner": false, "show_sign_in": false },
+  "title_bar": {
+    "show_onboarding_banner": false,
+    "show_sign_in": false,
+    "show_branch_name": false,
+  },
   "toolbar": { "quick_actions": false },
   "gutter": { "runnables": false, "breakpoints": false },
   "debugger": { "button": false },
@@ -27,7 +31,7 @@
   "formatter": [
     { "code_action": "source.organizeImports" },
     { "code_action": "source.fixAll" },
-    "auto"
+    "auto",
   ],
   "diagnostics": { "inline": { "enabled": true } },
   "terminal": { "cursor_shape": "bar", "button": false },
@@ -37,13 +41,13 @@
       "settings": {
         "exportTarget": "html",
         "syntaxOnly": "enable",
-        "formatterMode": "typstyle"
-      }
-    }
+        "formatterMode": "typstyle",
+      },
+    },
   },
   "languages": {
     "Typst": {
-      "soft_wrap": "editor_width"
-    }
-  }
+      "soft_wrap": "editor_width",
+    },
+  },
 }
