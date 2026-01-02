@@ -25,7 +25,6 @@
   "buffer_font_size": 16,
   "buffer_font_family": "Menlo",
   "ui_font_family": ".SystemUIFont",
-  "theme": "ZeroLimits",
   // Features
   "autosave": "on_focus_change",
   "formatter": [
