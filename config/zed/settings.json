@@ -21,10 +21,6 @@
   "toolbar": { "quick_actions": false },
   "gutter": { "runnables": false, "breakpoints": false },
   "debugger": { "button": false },
-  // Theme
-  "buffer_font_size": 16,
-  "buffer_font_family": "Menlo",
-  "ui_font_family": ".SystemUIFont",
   // Features
   "autosave": "on_focus_change",
   "formatter": [
