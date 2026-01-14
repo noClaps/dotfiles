@@ -22,5 +22,5 @@ colocate = true
 max-new-file-size = 0
 
 [aliases]
-advance = ["bookmark", "move", "main", "--to", "@-"]
+tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
 logn = ["log", "-r", "..", "-n"]
