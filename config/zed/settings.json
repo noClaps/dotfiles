@@ -16,6 +16,8 @@
     "show_onboarding_banner": false,
     "show_sign_in": false,
     "show_branch_name": false,
+    "show_project_items": false,
+    "show_user_menu": false,
   },
   "toolbar": { "quick_actions": false },
   "gutter": { "runnables": false, "breakpoints": false },
