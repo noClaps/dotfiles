@@ -1,4 +1,4 @@
-all: zsh git jj zed
+all: zsh git zed
 
 zsh:
 	@echo "zsh"
@@ -6,11 +6,8 @@ zsh:
 
 git:
 	@echo "git"
+	@ln -snf "${PWD}/config/git/config" "${HOME}/.config/git/config"
 	@ln -snf "${PWD}/config/git/ignore" "${HOME}/.config/git/ignore"
-
-jj:
-	@echo "jj"
-	@ln -snf "${PWD}/config/jj/config.toml" "${HOME}/.config/jj/config.toml"
 
 zed:
 	@echo "zed"
