@@ -1,6 +1,7 @@
 # CLI tools
 alias ls='ls -Ap1 --color'
 alias mkdir='mkdir -p'
+alias lg='lazygit'
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
