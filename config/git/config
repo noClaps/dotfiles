@@ -20,3 +20,5 @@
 	rebase = true
 [fetch]
 	prune = true
+[init]
+	defaultbranch = main
