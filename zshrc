@@ -1,7 +1,6 @@
 # CLI tools
 alias ls='ls -Ap1 --color'
 alias mkdir='mkdir -p'
-alias lg='lazygit'
 
 preexec() {
     start_time=$SECONDS
