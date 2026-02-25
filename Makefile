@@ -1,8 +1,12 @@
-all: zsh git zed
+all: zsh git zed curl
 
 zsh:
 	@echo "zsh"
 	@ln -snf "${PWD}/zshrc" "${HOME}/.zshrc"
+
+curl:
+	@echo "curl"
+	@ln -snf "${PWD}/curlrc" "${HOME}/.curlrc"
 
 git:
 	@echo "git"
