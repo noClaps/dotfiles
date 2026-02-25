@@ -11,4 +11,5 @@ git:
 
 zed:
 	@echo "zed"
+	@mkdir -p "${HOME}/.config/zed"
 	@ln -snf "${PWD}/config/zed/settings.json" "${HOME}/.config/zed/settings.json"
