@@ -1,6 +1,7 @@
 # CLI tools
 alias ls='ls -Ap1 --color'
 alias mkdir='mkdir -p'
+alias wcurl='curl --progress-bar --remote-name-all --fail --show-error --location --continue-at -'
 
 preexec() {
     start_time=$SECONDS
