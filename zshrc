@@ -24,5 +24,8 @@ export PATH="$HOME/.local/bin:$PATH"
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# go
+export PATH="$HOME/go/bin:$PATH"
+
 autoload -Uz compinit
 compinit
