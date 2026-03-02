@@ -40,8 +40,7 @@ input_mode "vim"
 # enable_terminal_cursor true
 # value type: true or false
 
-enable_terminal_color_scheme true
-# default value: false
+# enable_terminal_color_scheme false
 # value type: true or false
 
 # enable_sgr_pixel_mode_support true
@@ -113,8 +112,7 @@ enable_terminal_color_scheme true
 # follow_cursor_on_buffer_switch false
 # value type: true or false
 
-default_cursor "beam_blink"
-# default value: "default"
+# default_cursor "default"
 # value type: one of "default", "block_blink", "block", "underline_blink", "underline", "beam_blink", "beam"
 
 # modes_can_change_cursor true
