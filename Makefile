@@ -1,4 +1,4 @@
-all: zsh git zed ghostty flow
+all: zsh git ghostty flow
 
 zsh:
 	@echo "zsh"
@@ -8,11 +8,6 @@ git:
 	@echo "git"
 	@ln -snf "${PWD}/config/git/config" "${HOME}/.config/git/config"
 	@ln -snf "${PWD}/config/git/ignore" "${HOME}/.config/git/ignore"
-
-zed:
-	@echo "zed"
-	@mkdir -p "${HOME}/.config/zed"
-	@ln -snf "${PWD}/config/zed/settings.json" "${HOME}/.config/zed/settings.json"
 
 ghostty:
 	@echo "ghostty"
