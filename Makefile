@@ -15,5 +15,4 @@ ghostty:
 
 flow:
 	@echo "flow"
-	@mkdir -p "${HOME}/.config/flow"
-	@ln -snf "${PWD}/config/flow/config" "${HOME}/.config/flow/config"
+	@ln -snf "${PWD}/config/flow" "${HOME}/.config"
