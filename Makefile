@@ -1,4 +1,4 @@
-all: zsh git ghostty flow
+all: zsh git ghostty nvim
 
 zsh:
 	@echo "zsh"
@@ -13,6 +13,6 @@ ghostty:
 	@echo "ghostty"
 	@ln -snf "${PWD}/config/ghostty" "${HOME}/.config"
 
-flow:
-	@echo "flow"
-	@ln -snf "${PWD}/config/flow" "${HOME}/.config"
+nvim:
+	@echo "nvim"
+	@ln -snf "${PWD}/config/nvim" "${HOME}/.config"
