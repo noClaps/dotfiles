@@ -73,3 +73,26 @@ end, { expr = true, noremap = true })
 vim.keymap.set("i", "<CR>", function()
     return vim.fn.pumvisible() == 1 and "<C-y>" or "<CR>"
 end, { expr = true, noremap = true })
+
+-- lsp
+vim.lsp.config.lua_ls = {
+    settings = {
+        Lua = {
+            diagnostics = { globals = { "vim" } },
+            workspace = {
+                library = {
+                    vim.env.VIMRUNTIME,
+                    "${3rd}/luv/library",
+                },
+                checkThirdParty = false
+            }
+        }
+    }
+}
+vim.lsp.config.tinymist = {
+    settings = {
+        exportTarget = "html",
+        syntaxOnly = "enable",
+        formatterMode = "typstyle"
+    }
+}

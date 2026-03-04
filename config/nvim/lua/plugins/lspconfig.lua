@@ -2,29 +2,13 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
         vim.lsp.enable({
-            "cssls",
-            "eslint",
             "gopls",
-            "jsonls",
             "lua_ls",
             "rust_analyzer",
-            "superhtml",
-            "tombi",
+            "tinymist",
+            "ruff",
+            "ty",
         })
-        vim.lsp.config.lua_ls = {
-            settings = {
-                Lua = {
-                    diagnostics = { globals = { "vim" } },
-                    workspace = {
-                        library = {
-                            vim.env.VIMRUNTIME,
-                            "${3rd}/luv/library",
-                        },
-                        checkThirdParty = false
-                    }
-                }
-            }
-        }
         vim.api.nvim_create_autocmd("BufWritePre", {
             callback = function()
                 vim.lsp.buf.format()
