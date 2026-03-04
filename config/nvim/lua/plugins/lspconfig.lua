@@ -1,14 +1,6 @@
 return {
     "neovim/nvim-lspconfig",
     config = function()
-        vim.lsp.enable({
-            "gopls",
-            "lua_ls",
-            "rust_analyzer",
-            "tinymist",
-            "ruff",
-            "ty",
-        })
         vim.api.nvim_create_autocmd("BufWritePre", {
             callback = function()
                 vim.lsp.buf.format()

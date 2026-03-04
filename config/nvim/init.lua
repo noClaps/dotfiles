@@ -75,6 +75,14 @@ vim.keymap.set("i", "<CR>", function()
 end, { expr = true, noremap = true })
 
 -- lsp
+vim.lsp.enable({
+    "gopls",
+    "lua_ls",
+    "rust_analyzer",
+    "tinymist",
+    "ruff",
+    "ty",
+})
 vim.lsp.config.lua_ls = {
     settings = {
         Lua = {
