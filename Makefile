@@ -6,8 +6,7 @@ zsh:
 
 git:
 	@echo "git"
-	@ln -snf "${PWD}/config/git/config" "${HOME}/.config/git/config"
-	@ln -snf "${PWD}/config/git/ignore" "${HOME}/.config/git/ignore"
+	@ln -snf "${PWD}/config/git" "${HOME}/.config"
 
 ghostty:
 	@echo "ghostty"
