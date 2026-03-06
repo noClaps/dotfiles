@@ -18,9 +18,6 @@ precmd() {
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# path
-export PATH="$HOME/.local/bin:$PATH"
-
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
