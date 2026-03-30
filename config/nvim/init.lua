@@ -6,8 +6,6 @@ vim.pack.add({
     "https://github.com/JezerM/oil-lsp-diagnostics.nvim",
     "https://github.com/stevearc/oil.nvim",
 })
-vim.pack.update(nil, { force = true })
-
 require("oil-lsp-diagnostics").setup()
 require("oil").setup({
     view_options = {
@@ -41,6 +39,10 @@ vim.o.smartindent = true
 vim.api.nvim_create_user_command("Q", "q", {})              -- alias :Q to :q
 vim.api.nvim_create_user_command("Q", "q", { bang = true }) -- alias :Q! to :q!
 vim.api.nvim_create_user_command("W", "w", {})              -- alias :W to :w
+vim.api.nvim_create_user_command("Packupdate", function()
+    vim.pack.update(nil, { force = true })
+    require("nvim-treesitter").update()
+end, {}) -- add :Packupdate command
 vim.diagnostic.config({
     virtual_text = true,
     virtual_lines = true,
@@ -119,11 +121,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- treesitter
-local treesitter = require("nvim-treesitter")
-treesitter.update()
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "*",
     callback = function(args)
+        local treesitter = require("nvim-treesitter")
         local lang = args.match
 
         if vim.list_contains(treesitter.get_installed(), lang) then
