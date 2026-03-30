@@ -1,5 +1,5 @@
 # CLI tools
-alias ls='ls -Ap1 --color'
+alias ls='ls -A1 --color'
 alias mkdir='mkdir -p'
 alias wcurl='curl --progress-bar --remote-name-all --fail --show-error --location --continue-at -'
 
