@@ -1,19 +1,23 @@
--- lazy.nvim
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-    local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-    local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
-    if vim.v.shell_error ~= 0 then
-        vim.api.nvim_echo({
-            { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-            { out,                            "WarningMsg" },
-            { "\nPress any key to exit..." },
-        }, true, {})
-        vim.fn.getchar()
-        os.exit(1)
-    end
-end
-vim.opt.rtp:prepend(lazypath)
+-- plugins
+vim.pack.add({
+    "https://github.com/neovim/nvim-lspconfig",
+    "https://github.com/nvim-treesitter/nvim-treesitter",
+    "https://github.com/benomahony/oil-git.nvim",
+    "https://github.com/JezerM/oil-lsp-diagnostics.nvim",
+    "https://github.com/stevearc/oil.nvim",
+})
+vim.pack.update(nil, { force = true })
+
+require("oil-lsp-diagnostics").setup()
+require("oil").setup({
+    view_options = {
+        show_hidden = true,
+        is_always_hidden = function(name)
+            local ignore_list = { ".git", ".DS_Store" }
+            return vim.list_contains(ignore_list, name)
+        end
+    }
+})
 
 -- my settings
 vim.g.mapleader = " "
@@ -40,12 +44,6 @@ vim.api.nvim_create_user_command("W", "w", {})              -- alias :W to :w
 vim.diagnostic.config({
     virtual_text = true,
     virtual_lines = true,
-})
-
--- plugins
-require("lazy").setup({
-    spec = { import = "plugins" },
-    checker = { enabled = true },
 })
 
 -- keybinds
@@ -104,3 +102,40 @@ vim.lsp.config.tinymist = {
         formatterMode = "typstyle"
     }
 }
+vim.api.nvim_create_autocmd("BufWritePre", {
+    callback = function()
+        vim.lsp.buf.format()
+    end
+})
+vim.api.nvim_create_autocmd("LspAttach", {
+    callback = function(args)
+        local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+        if client:supports_method("textDocument/completion") then
+            local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
+            client.server_capabilities.completionProvider.triggerCharacters = chars
+            vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
+        end
+    end
+})
+
+-- treesitter
+local treesitter = require("nvim-treesitter")
+treesitter.update()
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "*",
+    callback = function(args)
+        local lang = args.match
+
+        if vim.list_contains(treesitter.get_installed(), lang) then
+            vim.treesitter.start()
+            return
+        end
+
+        if not vim.list_contains(treesitter.get_available(), lang) then
+            return
+        end
+        treesitter.install(lang):await(function()
+            vim.treesitter.start()
+        end)
+    end,
+})
