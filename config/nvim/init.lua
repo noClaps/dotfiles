@@ -77,13 +77,13 @@ end, { expr = true, noremap = true })
 -- lsp
 vim.lsp.enable({
     "gopls",
-    "lua_ls",
+    "emmylua_ls",
     "rust_analyzer",
     "tinymist",
     "ruff",
     "ty",
 })
-vim.lsp.config.lua_ls = {
+vim.lsp.config("emmylua_ls", {
     settings = {
         Lua = {
             diagnostics = { globals = { "vim" } },
@@ -96,14 +96,14 @@ vim.lsp.config.lua_ls = {
             }
         }
     }
-}
-vim.lsp.config.tinymist = {
+})
+vim.lsp.config("tinymist", {
     settings = {
         exportTarget = "html",
         syntaxOnly = "enable",
         formatterMode = "typstyle"
     }
-}
+})
 vim.api.nvim_create_autocmd("BufWritePre", {
     callback = function()
         vim.lsp.buf.format()
@@ -113,8 +113,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
         local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
         if client:supports_method("textDocument/completion") then
-            local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
-            client.server_capabilities.completionProvider.triggerCharacters = chars
+            local chars = {};
+            for i = 32, 126 do
+                table.insert(chars, string.char(i))
+            end
+            if client.server_capabilities and client.server_capabilities.completionProvider then
+                client.server_capabilities.completionProvider.triggerCharacters = chars
+            end
             vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
         end
     end
