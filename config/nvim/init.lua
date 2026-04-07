@@ -32,6 +32,7 @@ vim.o.cursorline = true
 vim.o.signcolumn = "yes"
 vim.o.mouse = "a"
 vim.o.completeopt = "noselect,menuone,popup"
+vim.o.autocomplete = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.autoindent = true
@@ -52,27 +53,6 @@ vim.diagnostic.config({
 vim.keymap.set("n", "<leader><leader>", ":Oil<CR>")
 vim.keymap.set("n", "<ESC>", ":nohlsearch<CR>")
 vim.keymap.set("i", "<C-space>", "<C-x><C-o>")
-vim.keymap.set({ "i", "s" }, "<Tab>", function()
-    if vim.fn.pumvisible() == 1 then
-        return "<C-n>"
-    elseif vim.snippet.active({ direction = 1 }) then
-        return "<cmd>lua vim.snippet.jump(1)<CR>"
-    else
-        return "<Tab>"
-    end
-end, { expr = true, noremap = true })
-vim.keymap.set("i", "<S-Tab>", function()
-    if vim.fn.pumvisible() == 1 then
-        return "<C-p>"
-    elseif vim.snippet.active({ direction = -1 }) then
-        return "<cmd>lua vim.snippet.jump(-1)<CR>"
-    else
-        return "<S-Tab>"
-    end
-end, { expr = true, noremap = true })
-vim.keymap.set("i", "<CR>", function()
-    return vim.fn.pumvisible() == 1 and "<C-y>" or "<CR>"
-end, { expr = true, noremap = true })
 
 -- lsp
 vim.lsp.enable({
@@ -113,13 +93,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
         local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
         if client:supports_method("textDocument/completion") then
-            local chars = {};
-            for i = 32, 126 do
-                table.insert(chars, string.char(i))
-            end
-            if client.server_capabilities and client.server_capabilities.completionProvider then
-                client.server_capabilities.completionProvider.triggerCharacters = chars
-            end
             vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
         end
     end
