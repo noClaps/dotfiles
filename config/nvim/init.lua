@@ -32,7 +32,6 @@ vim.o.cursorline = true
 vim.o.signcolumn = "yes"
 vim.o.mouse = "a"
 vim.o.completeopt = "noselect,menuone,popup"
-vim.o.autocomplete = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.autoindent = true
@@ -56,11 +55,12 @@ vim.keymap.set("i", "<C-space>", "<C-x><C-o>")
 
 -- lsp
 vim.lsp.enable({
-    "gopls",
+    "clangd",
     "emmylua_ls",
+    "gopls",
     "rust_analyzer",
-    "tinymist",
     "ruff",
+    "tinymist",
     "ty",
 })
 vim.lsp.config("emmylua_ls", {
@@ -93,6 +93,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
         local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
         if client:supports_method("textDocument/completion") then
+            local chars = {}
+            for i = 32, 126 do
+                table.insert(chars, string.char(i))
+            end
+
+            if not client.server_capabilities then return end
+            if not client.server_capabilities.completionProvider then return end
+            client.server_capabilities.completionProvider.triggerCharacters = chars
+
             vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
         end
     end
