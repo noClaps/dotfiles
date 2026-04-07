@@ -1,7 +1,7 @@
 # CLI tools
 alias ls='ls -A1 --color'
 alias mkdir='mkdir -p'
-alias wcurl='curl --progress-bar --remote-name-all --fail --show-error --location --continue-at -'
+alias cc='cc -Wall -Werror'
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
