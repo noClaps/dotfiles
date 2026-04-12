@@ -10,7 +10,7 @@
 	format = ssh
 [core]
 	compression = 9
-	editor = nvim
+	editor = zed --wait
 [push]
 	autoSetupRemote = true
 	followTags = true

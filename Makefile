@@ -1,4 +1,4 @@
-all: zsh git ghostty nvim
+all: zsh git ghostty nvim zed
 
 zsh:
 	@echo "zsh"
@@ -15,3 +15,8 @@ ghostty:
 nvim:
 	@echo "nvim"
 	@ln -snf "${PWD}/config/nvim" "${HOME}/.config"
+
+zed:
+	@echo "zed"
+	@mkdir -p "${HOME}/.config/zed"
+	@ln -snf "${PWD}/config/zed/settings.json" "${HOME}/.config/zed/settings.json"
