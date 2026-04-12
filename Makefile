@@ -1,4 +1,4 @@
-all: zsh git ghostty zed
+all: zsh git zed
 
 zsh:
 	@echo "zsh"
@@ -7,10 +7,6 @@ zsh:
 git:
 	@echo "git"
 	@ln -snf "${PWD}/config/git" "${HOME}/.config"
-
-ghostty:
-	@echo "ghostty"
-	@ln -snf "${PWD}/config/ghostty" "${HOME}/.config"
 
 zed:
 	@echo "zed"
