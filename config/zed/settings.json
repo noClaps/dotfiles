@@ -24,6 +24,7 @@
   // Features
   "autosave": "on_focus_change",
   "diagnostics": { "inline": { "enabled": true } },
+  "semantic_tokens": "combined",
   // LSP
   "lsp": {
     "tinymist": {
