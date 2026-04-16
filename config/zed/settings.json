@@ -4,7 +4,6 @@
   "collaboration_panel": { "button": false },
   "git_panel": { "button": false },
   "git": { "inline_blame": { "enabled": false } },
-  "notification_panel": { "button": false },
   "outline_panel": { "button": false },
   "search": { "button": false },
   "tab_bar": {
