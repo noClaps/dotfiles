@@ -6,7 +6,9 @@ zsh:
 
 git:
 	@echo "git"
-	@ln -snf "${PWD}/config/git" "${HOME}/.config"
+	@mkdir -p "${HOME}/.config/git"
+	@ln -snf "${PWD}/config/git/config" "${HOME}/.config/git/config"
+	@ln -snf "${PWD}/config/git/ignore" "${HOME}/.config/git/ignore"
 
 zed:
 	@echo "zed"
