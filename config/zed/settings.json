@@ -1,5 +1,6 @@
 {
   // Disabling unwanted features
+  "project_panel": { "dock": "left" },
   "disable_ai": true,
   "collaboration_panel": { "button": false },
   "git_panel": { "button": false },
