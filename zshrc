@@ -12,5 +12,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # go
 export PATH="$HOME/go/bin:$PATH"
 
+# uv
+export PATH="$HOME/.local/bin:$PATH"
+
 autoload -Uz compinit
 compinit
