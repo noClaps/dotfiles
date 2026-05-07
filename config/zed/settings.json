@@ -20,7 +20,7 @@
     "show_user_menu": false,
   },
   "toolbar": { "quick_actions": false },
-  "gutter": { "runnables": false, "breakpoints": false },
+  "gutter": { "runnables": false, "breakpoints": false, "bookmarks": false },
   "debugger": { "button": false },
   // Features
   "autosave": "on_focus_change",
