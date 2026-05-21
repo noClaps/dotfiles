@@ -26,6 +26,7 @@
   "autosave": "on_focus_change",
   "diagnostics": { "inline": { "enabled": true } },
   "semantic_tokens": "combined",
+  "completion_menu_item_kind": "symbol",
   // LSP
   "lsp": {
     "tinymist": {
