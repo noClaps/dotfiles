@@ -28,15 +28,6 @@
   "semantic_tokens": "combined",
   "completion_menu_item_kind": "symbol",
   // LSP
-  "lsp": {
-    "tinymist": {
-      "settings": {
-        "exportTarget": "html",
-        "syntaxOnly": "enable",
-        "formatterMode": "typstyle",
-      },
-    },
-  },
   "languages": {
     "Typst": {
       "soft_wrap": "editor_width",
