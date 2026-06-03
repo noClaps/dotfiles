@@ -9,8 +9,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# uv
-export PATH="$HOME/.local/bin:$PATH"
-
 autoload -Uz compinit
 compinit
