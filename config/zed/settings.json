@@ -27,6 +27,9 @@
   "diagnostics": { "inline": { "enabled": true } },
   "semantic_tokens": "combined",
   "completion_menu_item_kind": "symbol",
+  // Customisation
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_family": "SF Mono",
   // LSP
   "languages": {
     "Typst": {
