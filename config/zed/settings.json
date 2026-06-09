@@ -36,4 +36,11 @@
       "soft_wrap": "editor_width",
     },
   },
+  "lsp": {
+    "tinymist": {
+      "settings": {
+        "exportTarget": "html",
+      },
+    },
+  },
 }
