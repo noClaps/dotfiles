@@ -29,7 +29,7 @@
   "completion_menu_item_kind": "symbol",
   // Customisation
   "ui_font_family": ".SystemUIFont",
-  "buffer_font_family": "SF Mono",
+  "buffer_font_family": "Menlo",
   // LSP
   "languages": {
     "Typst": {
