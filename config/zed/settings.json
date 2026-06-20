@@ -39,7 +39,8 @@
   "lsp": {
     "tinymist": {
       "settings": {
-        "exportTarget": "html",
+        "typstExtraArgs": ["--features=bundle,html"],
+        "syntaxOnly": "enable",
       },
     },
   },
