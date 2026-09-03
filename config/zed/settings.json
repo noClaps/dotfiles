@@ -7,31 +7,22 @@
   "git_panel": { "button": false },
   "git": { "inline_blame": { "enabled": false } },
   "outline_panel": { "button": false },
-  "search": { "button": false },
-  "tab_bar": {
-    "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false,
-  },
   "telemetry": { "metrics": false, "diagnostics": false },
   "title_bar": {
-    "show_onboarding_banner": false,
     "show_sign_in": false,
-    "show_branch_name": false,
-    "show_user_menu": false,
+    "show_worktree_name": false,
   },
-  "toolbar": { "quick_actions": false },
   "gutter": { "runnables": false, "breakpoints": false, "bookmarks": false },
   "debugger": { "button": false },
   // Features
   "autosave": "on_focus_change",
   "diagnostics": { "inline": { "enabled": true } },
   "semantic_tokens": "combined",
-  "completion_menu_item_kind": "symbol",
   // Customisation
   "ui_font_family": ".SystemUIFont",
   "buffer_font_family": "Menlo",
   // LSP
-  "format_on_save": "on",
+  "format_on_save": "modifications",
   "languages": {
     "Typst": {
       "soft_wrap": "editor_width",
