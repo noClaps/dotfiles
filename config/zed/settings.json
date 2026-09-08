@@ -28,12 +28,4 @@
       "soft_wrap": "editor_width",
     },
   },
-  "lsp": {
-    "tinymist": {
-      "settings": {
-        "typstExtraArgs": ["--features=bundle,html"],
-        "syntaxOnly": "enable",
-      },
-    },
-  },
 }
