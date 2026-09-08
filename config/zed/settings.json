@@ -16,7 +16,6 @@
   "debugger": { "button": false },
   // Features
   "autosave": "on_focus_change",
-  "diagnostics": { "inline": { "enabled": true } },
   "semantic_tokens": "combined",
   // Customisation
   "ui_font_family": ".SystemUIFont",
