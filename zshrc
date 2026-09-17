@@ -8,7 +8,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # rust
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+
+# local
+export PATH="$HOME/.local/bin:$PATH"
 
 autoload -Uz compinit
 compinit
