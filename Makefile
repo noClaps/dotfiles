@@ -1,4 +1,4 @@
-all: zsh git zed oxide
+all: zsh git zed oxide nvim
 
 zsh:
 	@echo "zsh"
@@ -19,3 +19,7 @@ oxide:
 	@echo "oxide"
 	@mkdir -p "${HOME}/.config/oxide"
 	@ln -snf "${PWD}/config/oxide/config.toml" "${HOME}/.config/oxide/config.toml"
+
+nvim:
+	@echo "nvim"
+	@ln -snf "${PWD}/config/nvim" "${HOME}/.config"
