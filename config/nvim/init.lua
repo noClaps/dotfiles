@@ -40,7 +40,6 @@ vim.keymap.set("i", "<C-space>", "<C-x><C-o>")
 vim.lsp.enable({
     "clangd",
     "emmylua_ls",
-    "gopls",
     "rust_analyzer",
     "ruff",
     "tinymist",
