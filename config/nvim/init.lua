@@ -55,7 +55,12 @@ vim.lsp.config("emmylua_ls", {
         }
     }
 })
-vim.lsp.config("tinymist", { settings = { typstExtraArgs = { "--features=html,bundle" } } })
+vim.lsp.config("tinymist", {
+    settings = {
+        typstExtraArgs = { "--features=html,bundle" },
+        syntaxOnly = "enable"
+    }
+})
 vim.api.nvim_create_autocmd("BufWritePre", {
     callback = function ()
         vim.lsp.buf.format()
