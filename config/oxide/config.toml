@@ -1,0 +1,10 @@
+bell = "visual"
+
+[tree]
+show_hidden = true
+
+[shell]
+option_as_meta = "both"
+
+[prompt]
+enabled = false
