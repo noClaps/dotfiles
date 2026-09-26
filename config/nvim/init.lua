@@ -81,9 +81,7 @@ vim.lsp.config("tinymist", {
     }
 })
 vim.api.nvim_create_autocmd("BufWritePre", {
-    callback = function ()
-        vim.lsp.buf.format()
-    end
+    callback = function () vim.lsp.buf.format() end
 })
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function (args)
@@ -115,11 +113,10 @@ vim.api.nvim_create_autocmd("FileType", {
             return
         end
 
-        if not vim.list_contains(treesitter.get_available(), lang) then
-            return
+        if vim.list_contains(treesitter.get_available(), lang) then
+            treesitter.install(lang):await(function ()
+                vim.treesitter.start()
+            end)
         end
-        treesitter.install(lang):await(function ()
-            vim.treesitter.start()
-        end)
     end
 })
