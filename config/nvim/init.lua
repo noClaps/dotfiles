@@ -30,6 +30,21 @@ vim.api.nvim_create_user_command("Packupdate", function ()
     require("nvim-treesitter").update():wait(10000)
 end, {}
 ) -- add :Packupdate command
+vim.api.nvim_create_user_command("Packdel", function (opts) vim.pack.del(opts.fargs) end, {
+    nargs = "+",
+    bang = true,
+    complete = function (arglead)
+        local plugins = vim.pack.get(nil, { info = false })
+        local names = {}
+        for _, plugin in ipairs(plugins) do
+            local name = plugin.spec.name
+            if vim.startswith(name, arglead) then
+                names[#names + 1] = name
+            end
+        end
+        return names
+    end
+}) -- add :Packdel command
 vim.diagnostic.config({
     virtual_text = true,
     virtual_lines = true
