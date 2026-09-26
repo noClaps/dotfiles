@@ -58,10 +58,10 @@ vim.keymap.set("x", "]", function () vim.treesitter.select("child") end, { nowai
 
 -- lsp
 vim.lsp.enable({
-    "clangd",
     "emmylua_ls",
     "rust_analyzer",
     "ruff",
+    "sourcekit",
     "tinymist",
     "ty"
 })
