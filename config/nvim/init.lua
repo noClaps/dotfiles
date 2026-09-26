@@ -45,10 +45,7 @@ vim.api.nvim_create_user_command("Packdel", function (opts) vim.pack.del(opts.fa
         return names
     end
 }) -- add :Packdel command
-vim.diagnostic.config({
-    virtual_text = true,
-    virtual_lines = true
-})
+vim.diagnostic.config({ virtual_lines = true })
 
 -- keybinds
 vim.keymap.set("n", "<ESC>", ":nohlsearch<CR>")
