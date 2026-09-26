@@ -8,3 +8,6 @@ option_as_meta = "both"
 
 [prompt]
 enabled = false
+
+[cursor]
+style = "bar"
