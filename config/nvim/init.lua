@@ -37,7 +37,10 @@ vim.diagnostic.config({
 -- keybinds
 vim.keymap.set("n", "<ESC>", ":nohlsearch<CR>")
 vim.keymap.set("i", "<C-space>", "<C-x><C-o>")
+vim.keymap.set("x", "[", function () vim.treesitter.select("parent") end, { nowait = true })
+vim.keymap.set("x", "]", function () vim.treesitter.select("child") end, { nowait = true })
 
+-- lsp
 vim.lsp.enable({
     "clangd",
     "emmylua_ls",
