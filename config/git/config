@@ -10,7 +10,6 @@
 	format = ssh
 [core]
 	compression = 9
-	editor = zed --wait
 [push]
 	autoSetupRemote = true
 	followTags = true
