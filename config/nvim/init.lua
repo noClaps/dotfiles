@@ -49,7 +49,10 @@ vim.diagnostic.config({ virtual_lines = true })
 
 -- keybinds
 vim.keymap.set("n", "<ESC>", ":nohlsearch<CR>")
+vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+vim.keymap.set("n", "gi", vim.lsp.buf.implementation)
 vim.keymap.set("i", "<C-space>", "<C-x><C-o>")
+vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help)
 vim.keymap.set("x", "[", function () vim.treesitter.select("parent") end, { nowait = true })
 vim.keymap.set("x", "]", function () vim.treesitter.select("child") end, { nowait = true })
 
