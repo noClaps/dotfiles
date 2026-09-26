@@ -6,6 +6,8 @@ vim.pack.add({
 })
 
 -- settings
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrw_plugin = 1
 vim.g.mapleader = " "
 vim.g.no_plugin_maps = true
 vim.o.number = true
