@@ -31,7 +31,6 @@ end, {}
 ) -- add :Packupdate command
 vim.api.nvim_create_user_command("Packdel", function (opts) vim.pack.del(opts.fargs) end, {
     nargs = "+",
-    bang = true,
     complete = function (arglead)
         local plugins = vim.pack.get(nil, { info = false })
         local names = {}
@@ -54,14 +53,6 @@ vim.keymap.set("x", "[", function () vim.treesitter.select("parent") end, { nowa
 vim.keymap.set("x", "]", function () vim.treesitter.select("child") end, { nowait = true })
 
 -- lsp
-vim.lsp.enable({
-    "emmylua_ls",
-    "rust_analyzer",
-    "ruff",
-    "sourcekit",
-    "tinymist",
-    "ty"
-})
 vim.lsp.config("emmylua_ls", {
     settings = {
         emmylua = {
@@ -76,6 +67,14 @@ vim.lsp.config("tinymist", {
         typstExtraArgs = { "--features=html,bundle" },
         syntaxOnly = "enable"
     }
+})
+vim.lsp.enable({
+    "emmylua_ls",
+    "rust_analyzer",
+    "ruff",
+    "sourcekit",
+    "tinymist",
+    "ty"
 })
 vim.api.nvim_create_autocmd("BufWritePre", {
     callback = function () vim.lsp.buf.format() end
