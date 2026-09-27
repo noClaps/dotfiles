@@ -14,8 +14,8 @@ vim.pack.add({
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.wrap = false
-vim.o.tabstop = 4
-vim.o.shiftwidth = 0
+vim.o.shiftwidth = 4
+vim.o.softtabstop = -1
 vim.o.expandtab = true
 vim.o.winborder = "single"
 vim.o.clipboard = "unnamedplus"
