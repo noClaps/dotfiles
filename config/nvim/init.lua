@@ -25,7 +25,6 @@ vim.o.mouse = "a"
 vim.o.completeopt = "noselect,menuone,popup"
 vim.o.ignorecase = true
 vim.o.smartcase = true
-vim.o.smartindent = true
 vim.api.nvim_create_user_command("Packupdate", function ()
     vim.pack.update(nil, { force = true })
     require("nvim-treesitter").update():wait(300000)
