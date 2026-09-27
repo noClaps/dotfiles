@@ -21,7 +21,6 @@ vim.o.winborder = "single"
 vim.o.clipboard = "unnamedplus"
 vim.o.cursorline = true
 vim.o.signcolumn = "yes"
-vim.o.mouse = "a"
 vim.o.completeopt = "noselect,menuone,popup"
 vim.o.ignorecase = true
 vim.o.smartcase = true
