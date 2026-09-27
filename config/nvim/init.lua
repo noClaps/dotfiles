@@ -16,7 +16,6 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.wrap = false
 vim.o.tabstop = 4
-vim.o.softtabstop = 0
 vim.o.shiftwidth = 0
 vim.o.expandtab = true
 vim.o.winborder = "single"
@@ -27,7 +26,6 @@ vim.o.mouse = "a"
 vim.o.completeopt = "noselect,menuone,popup"
 vim.o.ignorecase = true
 vim.o.smartcase = true
-vim.o.autoindent = true
 vim.o.smartindent = true
 vim.api.nvim_create_user_command("Packupdate", function ()
     vim.pack.update(nil, { force = true })
