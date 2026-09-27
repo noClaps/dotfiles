@@ -70,8 +70,8 @@ vim.lsp.config("tinymist", {
 })
 vim.lsp.enable({
     "emmylua_ls",
-    "rust_analyzer",
     "ruff",
+    "rust_analyzer",
     "sourcekit",
     "tinymist",
     "ty"
