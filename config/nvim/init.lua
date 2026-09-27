@@ -108,7 +108,7 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = "*",
     callback = function (args)
         local treesitter = require("nvim-treesitter")
-        local lang = args.match
+        local lang = vim.treesitter.language.get_lang(args.match)
 
         if vim.list_contains(treesitter.get_installed(), lang) then
             vim.treesitter.start()
