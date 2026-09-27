@@ -29,7 +29,7 @@ vim.o.autoindent = true
 vim.o.smartindent = true
 vim.api.nvim_create_user_command("Packupdate", function ()
     vim.pack.update(nil, { force = true })
-    require("nvim-treesitter").update():wait(10000)
+    require("nvim-treesitter").update():wait(300000)
 end, {}
 ) -- add :Packupdate command
 vim.api.nvim_create_user_command("Packdel", function (opts) vim.pack.del(opts.fargs) end, {
