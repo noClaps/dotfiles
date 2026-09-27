@@ -1,3 +1,9 @@
+-- globals
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrw_plugin = 1
+vim.g.mapleader = " "
+vim.g.no_plugin_maps = true
+
 -- plugins
 vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
@@ -6,10 +12,6 @@ vim.pack.add({
 })
 
 -- settings
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrw_plugin = 1
-vim.g.mapleader = " "
-vim.g.no_plugin_maps = true
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.wrap = false
