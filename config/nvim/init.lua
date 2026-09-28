@@ -7,8 +7,10 @@ vim.g.no_plugin_maps = true
 vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/nvim-treesitter/nvim-treesitter",
-    "https://github.com/lewis6991/gitsigns.nvim"
+    "https://github.com/lewis6991/gitsigns.nvim",
+    { src = "https://github.com/catppuccin/nvim", name = "catppuccin" }
 })
+vim.cmd("colorscheme catppuccin-mocha")
 
 -- settings
 vim.o.number = true
