@@ -8,9 +8,21 @@ vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/nvim-treesitter/nvim-treesitter",
     "https://github.com/lewis6991/gitsigns.nvim",
-    { src = "https://github.com/catppuccin/nvim", name = "catppuccin" }
+    { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
+    "https://github.com/nvim-lualine/lualine.nvim"
 })
 vim.cmd("colorscheme catppuccin-mocha")
+require("lualine").setup({
+    options = { icons_enabled = false },
+    sections = {
+        lualine_a = { "mode" },
+        lualine_b = { "branch", "diff", "diagnostics" },
+        lualine_c = { "filename" },
+        lualine_x = { "lsp_status" },
+        lualine_y = { "filetype" },
+        lualine_z = { "location" }
+    }
+})
 
 -- settings
 vim.o.number = true
