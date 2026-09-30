@@ -1,4 +1,4 @@
-all: zsh git zed oxide
+all: zsh git zed
 
 zsh:
 	@echo "zsh"
@@ -14,8 +14,3 @@ zed:
 	@echo "zed"
 	@mkdir -p "${HOME}/.config/zed"
 	@ln -snf "${PWD}/config/zed/settings.json" "${HOME}/.config/zed/settings.json"
-
-oxide:
-	@echo "oxide"
-	@mkdir -p "${HOME}/.config/oxide"
-	@ln -snf "${PWD}/config/oxide/config.toml" "${HOME}/.config/oxide/config.toml"
