@@ -19,7 +19,7 @@
     },
     "tool_permissions": { "default": "allow" },
     "dock": "right",
-    "sidebar_side": "right",
+    "threads_sidebar": { "position": "right", "auto_open": false },
   },
   "autosave": "on_focus_change",
   "semantic_tokens": "combined",
