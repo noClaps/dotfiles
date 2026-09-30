@@ -16,8 +16,6 @@
     "default_model": {
       "provider": "openai-subscribed",
       "model": "gpt-6.1-sol",
-      "enable_thinking": true,
-      "effort": "low",
     },
     "tool_permissions": { "default": "allow" },
     "dock": "right",
