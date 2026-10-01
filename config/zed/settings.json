@@ -13,6 +13,7 @@
   "debugger": { "button": false },
   // Features
   "agent": {
+    "prevent_idle_sleep": true,
     "default_model": {
       "provider": "openai-subscribed",
       "model": "gpt-6.1-sol",
