@@ -28,5 +28,4 @@
   "buffer_font_features": { "calt": false },
   // LSP
   "format_on_save": "on",
-  "languages": { "Typst": { "soft_wrap": "editor_width" } },
 }
