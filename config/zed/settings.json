@@ -1,8 +1,8 @@
 {
   // Disabling unwanted features
+  "disable_ai": true,
   "cli_default_open_behavior": "new_window",
   "project_panel": { "dock": "left" },
-  "edit_predictions": { "provider": "none" },
   "collaboration_panel": { "button": false },
   "git_panel": { "button": false },
   "git": { "inline_blame": { "enabled": false } },
@@ -12,16 +12,6 @@
   "gutter": { "runnables": false, "breakpoints": false, "bookmarks": false },
   "debugger": { "button": false },
   // Features
-  "agent": {
-    "prevent_idle_sleep": true,
-    "default_model": {
-      "provider": "openai-subscribed",
-      "model": "gpt-6.1-sol",
-    },
-    "tool_permissions": { "default": "allow" },
-    "dock": "right",
-    "threads_sidebar": { "position": "right", "auto_open": false },
-  },
   "autosave": "on_focus_change",
   "semantic_tokens": "combined",
   // Customisation
