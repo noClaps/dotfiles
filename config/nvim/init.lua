@@ -70,6 +70,7 @@ vim.lsp.config("emmylua_ls", {
 })
 vim.lsp.enable({
     "emmylua_ls",
+    "markdown_oxide",
     "ruff",
     "rust_analyzer",
     "sourcekit",
