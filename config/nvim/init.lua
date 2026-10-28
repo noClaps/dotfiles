@@ -8,12 +8,12 @@ vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/nvim-treesitter/nvim-treesitter",
     "https://github.com/lewis6991/gitsigns.nvim",
-    "https://github.com/nvim-tree/nvim-tree.lua",
-    "https://github.com/nvim-tree/nvim-web-devicons"
+    "https://github.com/stevearc/oil.nvim"
 })
-
-require("nvim-tree").setup()
-require("nvim-tree.api").tree.open()
+require("oil").setup({
+    view_options = { show_hidden = true },
+    watch_for_changes = true
+})
 
 -- settings
 vim.o.number = true
@@ -56,7 +56,7 @@ vim.keymap.set("n", "gd", vim.lsp.buf.definition)
 vim.keymap.set("i", "<C-space>", vim.lsp.completion.get)
 vim.keymap.set("x", "[", function () vim.treesitter.select("parent") end, { nowait = true })
 vim.keymap.set("x", "]", function () vim.treesitter.select("child") end, { nowait = true })
-vim.keymap.set("n", "<leader><leader>", require("nvim-tree.api").tree.toggle)
+vim.keymap.set("n", "<leader><leader>", ":Oil<CR>")
 
 -- lsp
 vim.lsp.config("emmylua_ls", {
