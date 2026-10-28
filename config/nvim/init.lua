@@ -11,7 +11,9 @@ vim.pack.add({
     "https://github.com/nvim-tree/nvim-tree.lua",
     "https://github.com/nvim-tree/nvim-web-devicons"
 })
+
 require("nvim-tree").setup()
+require("nvim-tree.api").tree.open()
 
 -- settings
 vim.o.number = true
@@ -54,6 +56,7 @@ vim.keymap.set("n", "gd", vim.lsp.buf.definition)
 vim.keymap.set("i", "<C-space>", vim.lsp.completion.get)
 vim.keymap.set("x", "[", function () vim.treesitter.select("parent") end, { nowait = true })
 vim.keymap.set("x", "]", function () vim.treesitter.select("child") end, { nowait = true })
+vim.keymap.set("n", "<leader><leader>", require("nvim-tree.api").tree.toggle)
 
 -- lsp
 vim.lsp.config("emmylua_ls", {
