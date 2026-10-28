@@ -8,21 +8,10 @@ vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/nvim-treesitter/nvim-treesitter",
     "https://github.com/lewis6991/gitsigns.nvim",
-    { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
-    "https://github.com/nvim-lualine/lualine.nvim"
+    "https://github.com/nvim-tree/nvim-tree.lua",
+    "https://github.com/nvim-tree/nvim-web-devicons"
 })
-vim.cmd("colorscheme catppuccin-mocha")
-require("lualine").setup({
-    options = { icons_enabled = false },
-    sections = {
-        lualine_a = { "mode" },
-        lualine_b = { "branch", "diff", "diagnostics" },
-        lualine_c = { "filename" },
-        lualine_x = { "lsp_status" },
-        lualine_y = { "filetype" },
-        lualine_z = { "location" }
-    }
-})
+require("nvim-tree").setup()
 
 -- settings
 vim.o.number = true
@@ -76,18 +65,11 @@ vim.lsp.config("emmylua_ls", {
         }
     }
 })
-vim.lsp.config("tinymist", {
-    settings = {
-        typstExtraArgs = { "--features=html,bundle" },
-        syntaxOnly = "enable"
-    }
-})
 vim.lsp.enable({
     "emmylua_ls",
     "ruff",
     "rust_analyzer",
     "sourcekit",
-    "tinymist",
     "ty"
 })
 vim.api.nvim_create_autocmd("BufWritePre", {
