@@ -23,14 +23,22 @@ esac
 
 # functions
 update() {
+    (( counter = 0 ))
+    local echobu() {
+        if [ $counter -gt 0 ]; then echo; fi
+        (( counter = counter + 1 ))
+        echo -e "\e[1;4m$*\e[0m"
+    }
+
+    echobu "Updating Homebrew packages"
     brew update && brew upgrade
-    echo "Updating uv Python version"
+    echobu "Updating uv Python version"
     uv python upgrade
-    echo "Updating uv tools"
+    echobu "Updating uv tools"
     uv tool upgrade --all
-    echo "Updating pnpm global packages"
+    echobu "Updating pnpm global packages"
     pnpm update -g
-    echo "Updating Neovim with bob"
+    echobu "Updating Neovim with bob"
     bob update --all
 }
 
