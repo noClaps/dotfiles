@@ -8,11 +8,22 @@ vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/nvim-treesitter/nvim-treesitter",
     "https://github.com/lewis6991/gitsigns.nvim",
-    "https://github.com/stevearc/oil.nvim"
+    "https://github.com/stevearc/oil.nvim",
+    "https://github.com/nvim-lualine/lualine.nvim"
 })
 require("oil").setup({
     view_options = { show_hidden = true },
     watch_for_changes = true
+})
+require("lualine").setup({
+    sections = {
+        lualine_a = { "mode" },
+        lualine_b = { "branch", "diff", "diagnostics" },
+        lualine_c = { "filename" },
+        lualine_x = { "lsp_status" },
+        lualine_y = { "filetype" },
+        lualine_z = { "location" }
+    }
 })
 
 -- settings
