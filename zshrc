@@ -2,6 +2,9 @@
 alias ls='ls -A1 --color'
 alias mkdir='mkdir -p'
 
+# env
+export EDITOR='nvim'
+
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
