@@ -81,7 +81,8 @@ vim.lsp.config("emmylua_ls", {
 })
 vim.lsp.enable({
     "emmylua_ls",
-    "markdown_oxide",
+    "oxfmt",
+    "oxlint",
     "ruff",
     "rust_analyzer",
     "sourcekit",
