@@ -9,7 +9,8 @@ vim.pack.add({
     "https://github.com/nvim-treesitter/nvim-treesitter",
     "https://github.com/lewis6991/gitsigns.nvim",
     "https://github.com/stevearc/oil.nvim",
-    "https://github.com/nvim-lualine/lualine.nvim"
+    "https://github.com/nvim-lualine/lualine.nvim",
+    "https://github.com/nvim-treesitter/nvim-treesitter-context"
 })
 require("oil").setup({
     view_options = { show_hidden = true },
