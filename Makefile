@@ -6,9 +6,7 @@ zsh:
 
 git:
 	@echo "git"
-	@mkdir -p "${HOME}/.config/git"
-	@ln -snf "${PWD}/config/git/config" "${HOME}/.config/git/config"
-	@ln -snf "${PWD}/config/git/ignore" "${HOME}/.config/git/ignore"
+	@ln -snf "${PWD}/config/git" "${HOME}/.config"
 
 nvim:
 	@echo "nvim"
