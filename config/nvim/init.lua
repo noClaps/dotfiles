@@ -103,9 +103,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
                 table.insert(chars, string.char(i))
             end
 
-            if not client.server_capabilities then return end
-            if not client.server_capabilities.completionProvider then return end
-            client.server_capabilities.completionProvider.triggerCharacters = chars
+            assert(assert(client.server_capabilities).completionProvider).triggerCharacters = chars
 
             vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
         end
