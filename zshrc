@@ -1,6 +1,7 @@
 # CLI tools
 alias ls='ls -A1 --color'
 alias mkdir='mkdir -p'
+alias cc='cc -std=c23 -Wall -Wextra -Wpedantic -Wformat -Werror'
 
 # env
 export EDITOR='nvim'
