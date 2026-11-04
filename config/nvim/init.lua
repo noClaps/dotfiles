@@ -89,6 +89,7 @@ vim.lsp.enable({
     "ruff",
     "rust_analyzer",
     "sourcekit",
+    "tsc",
     "ty"
 })
 vim.api.nvim_create_autocmd("BufWritePre", {
