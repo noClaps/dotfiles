@@ -71,6 +71,7 @@ vim.keymap.set("i", "<C-space>", vim.lsp.completion.get)
 vim.keymap.set("x", "[", function () vim.treesitter.select("parent") end, { nowait = true })
 vim.keymap.set("x", "]", function () vim.treesitter.select("child") end, { nowait = true })
 vim.keymap.set("n", "<leader><leader>", ":Oil<CR>")
+vim.keymap.set("n", "<leader>f", function () vim.lsp.buf.format() end)
 
 -- lsp
 vim.lsp.config("emmylua_ls", {
@@ -91,9 +92,6 @@ vim.lsp.enable({
     "sourcekit",
     "tsc",
     "ty"
-})
-vim.api.nvim_create_autocmd("BufWritePre", {
-    callback = function () vim.lsp.buf.format() end
 })
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function (args)
