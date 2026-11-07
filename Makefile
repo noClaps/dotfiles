@@ -1,4 +1,4 @@
-all: zsh git nvim
+all: zsh git zed nvim
 
 zsh:
 	@echo "zsh"
@@ -7,6 +7,11 @@ zsh:
 git:
 	@echo "git"
 	@ln -snf "${PWD}/config/git" "${HOME}/.config"
+
+zed:
+	@echo "zed"
+	@mkdir -p "${HOME}/.config/zed"
+	@ln -snf "${PWD}/config/zed/settings.json" "${HOME}/.config/zed/settings.json"
 
 nvim:
 	@echo "nvim"

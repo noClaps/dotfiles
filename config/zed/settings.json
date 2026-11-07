@@ -1,0 +1,19 @@
+{
+  // Disabling unwanted features
+  "disable_ai": true,
+  "cli_default_open_behavior": "new_window",
+  "project_panel": { "dock": "left" },
+  "collaboration_panel": { "button": false },
+  "outline_panel": { "button": false },
+  "telemetry": { "metrics": false, "diagnostics": false },
+  "title_bar": { "show_sign_in": false, "show_worktree_name": false },
+  "gutter": { "runnables": false, "breakpoints": false, "bookmarks": false },
+  "debugger": { "button": false },
+  // Features
+  "autosave": "on_focus_change",
+  "semantic_tokens": "combined",
+  // Customisation
+  "buffer_font_features": { "calt": false },
+  // LSP
+  "format_on_save": "on",
+}
