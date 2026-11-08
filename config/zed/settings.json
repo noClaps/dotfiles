@@ -30,9 +30,6 @@
   // Features
   "autosave": "on_focus_change",
   "semantic_tokens": "combined",
-  "terminal": {
-    "option_as_meta": true,
-  },
   // Customisation
   "buffer_font_features": {
     "calt": false,
