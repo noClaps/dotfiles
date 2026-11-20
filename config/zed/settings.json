@@ -31,10 +31,8 @@
   "autosave": "on_focus_change",
   "semantic_tokens": "combined",
   // Customisation
-  "buffer_font_features": {
-    "calt": false,
-  },
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_family": ".AppleSystemUIFontMonospaced",
   // LSP
   "format_on_save": "on",
-  "formatter": ["language_server", "auto"],
 }
