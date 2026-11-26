@@ -2,15 +2,9 @@
   // Disabling unwanted features
   "disable_ai": true,
   "cli_default_open_behavior": "new_window",
-  "project_panel": {
-    "dock": "left",
-  },
-  "collaboration_panel": {
-    "button": false,
-  },
-  "outline_panel": {
-    "button": false,
-  },
+  "project_panel": { "dock": "left" },
+  "collaboration_panel": { "button": false },
+  "outline_panel": { "button": false },
   "telemetry": {
     "metrics": false,
     "diagnostics": false,
@@ -24,9 +18,8 @@
     "breakpoints": false,
     "bookmarks": false,
   },
-  "debugger": {
-    "button": false,
-  },
+  "debugger": { "button": false },
+  "git_panel": { "button": false },
   // Features
   "autosave": "on_focus_change",
   "semantic_tokens": "combined",
